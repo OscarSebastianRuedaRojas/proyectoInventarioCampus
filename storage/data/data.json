@@ -1,0 +1,317 @@
+{
+    "categoriaActivo": [
+        {
+            "id": "Ctg-1",
+            "nombre": "Juegos"
+        },
+        {
+            "id": "Ctg-2",
+            "nombre": "Electrodomesticos"
+        },
+        {
+            "id": "Ctg-3",
+            "nombre": "Mobiliario"
+        },
+        {
+            "id": "Ctg-4",
+            "nombre": "Dispositivos"
+        },
+        {
+            "id": "Ctg-5",
+            "nombre": "EquiposComputo"
+        }
+    ],
+    "marcas": [
+        {
+            "id": "Mc-1",
+            "nombre": "Whirpool"
+        },
+        {
+            "id": "Mc-2",
+            "nombre": "Challenger"
+        },
+        {
+            "id": "Mc-3",
+            "nombre": "LG"
+        },
+        {
+            "id": "Mc-4",
+            "nombre": "TCL"
+        },
+        {
+            "id": "Mc-5",
+            "nombre": "Midea"
+        },
+        {
+            "id": "Mc-6",
+            "nombre": "EPSON"
+        },
+        {
+            "id": "Mc-7",
+            "nombre": "Sony"
+        },
+        {
+            "id": "Mc-8",
+            "nombre": "Compumax"
+        },
+        {
+            "id": "Mc-9",
+            "nombre": "Kallio"
+        },
+        {
+            "id": "Mc-10",
+            "nombre": "Collins"
+        },
+        {
+            "id": "Mc-11",
+            "nombre": "Omega"
+        },
+        {
+            "id": "Mc-12",
+            "nombre": "HP"
+        },
+        {
+            "id": "Mc-13",
+            "nombre": "LENOVO"
+        },
+        {
+            "id": "Mc-14",
+            "nombre": "Acer"
+        },
+        {
+            "id": "Mc-15",
+            "nombre": "Asus"
+        },
+        {
+            "id": "Mc-16",
+            "nombre": "Trust"
+        }
+    ],
+    "tipoPersona": [
+        {
+            "id": "TpPs-1",
+            "nombre": "Natural"
+        },
+        {
+            "id": "TpPs-2",
+            "nombre": "Juridica"
+        }
+    ],
+    "tipoMovActivo": [
+
+    ],
+    "historialActivo": [
+
+    ],
+    "proveedor": [
+        {
+            "id": "Prv-1",
+            "nombre": "Cencosud Colombia Sa",
+            "email": "sac@tiendasjumbo.co"
+        },
+        {
+            "id": "Prv-2",
+            "nombre": "Colombiana De Comercio",
+            "email": "soporte.proveedores@colcomercio.com.co"
+        },
+        {
+            "id": "Prv-3",
+            "nombre": "Colombiana De Comercio",
+            "email": "soporte.proveedores@colcomercio.com.co"
+        },
+        {
+            "id": "Prv-4",
+            "nombre": "Compumax Computer",
+            "email": "contactanos@compumax.com"
+        },
+        {
+            "id": "Prv-5",
+            "nombre": "Decathlon Colombia Sas",
+            "email": "dsa.contact@decathlon.com"
+        },
+        {
+            "id": "Prv-6",
+            "nombre": "Di+Seña Soluciones Arquitectonicas Sas",
+            "email": "disenasolucionesarq@gmail.com"
+        },
+        {
+            "id": "Prv-7",
+            "nombre": "Simaro Colombia Sas",
+            "email": "info@simaro.co"
+        },
+        {
+            "id": "Prv-8",
+            "nombre": "Sodimac Colombia Sa",
+            "email": "contactocomercial@homecenter.co"
+        },
+        {
+            "id": "Prv-9",
+            "nombre": "Tecnomarketink La 33 Sas",
+            "email": "Información no disponible."
+        }
+    ],
+    "estados":[
+        {
+            "id": "Es-0",
+            "nombre": "No asignado"
+        },
+        {
+            "id": "Es-1",
+            "nombre": "Asignado"
+        },
+        {
+            "id": "Es-2",
+            "nombre": "Dado de baja por daño"
+        },
+        {
+            "id": "Es-3",
+            "nombre": "En reparacion y/o Garantia"
+        }
+    ],
+    "telefonoPersona": [
+
+    ],
+    "asignacion": [
+
+    ],
+    "tipoActivo": [
+        {
+            "id": "TpAc-1",
+            "nombre": "Aire Acondicionado"
+        },
+        {
+            "id": "TpAc-2",
+            "nombre": "Archivador"
+        },
+        {
+            "id": "TpAc-3",
+            "nombre": "Atril para portatil"
+        },
+        {
+            "id": "TpAc-4",
+            "nombre": "Biblioteca"
+        },
+        {
+            "id": "TpAc-5",
+            "nombre": "Bodg50"
+        },
+        {
+            "id": "TpAc-6",
+            "nombre": "Cajas"
+        },
+        {
+            "id": "TpAc-7",
+            "nombre": "Camara"
+        },
+        {
+            "id": "TpAc-8",
+            "nombre": "Computador"
+        },
+        {
+            "id": "TpAc-9",
+            "nombre": "Centro House"
+        },
+        {
+            "id": "TpAc-10",
+            "nombre": "CPU"
+        },
+        {
+            "id": "TpAc-11",
+            "nombre": "Diadema"
+        },
+        {
+            "id": "TpAc-12",
+            "nombre": "Dispensador de Agua"
+        },
+        {
+            "id": "TpAc-13",
+            "nombre": "Estructura"
+        },
+        {
+            "id": "TpAc-14",
+            "nombre": "Espaldares"
+        },
+        {
+            "id": "TpAc-15",
+            "nombre": "Horno"
+        },
+        {
+            "id": "TpAc-16",
+            "nombre": "Mesa"
+        },
+        {
+            "id": "TpAc-17",
+            "nombre": "Impresora"
+        },
+        {
+            "id": "TpAc-18",
+            "nombre": "Juegos varios"
+        },
+        {
+            "id": "TpAc-19",
+            "nombre": "Locker"
+        },
+        {
+            "id": "TpAc-20",
+            "nombre": "Maquinas"
+        },
+        {
+            "id": "TpAc-21",
+            "nombre": "Mesa Ping Pong"
+        },
+        {
+            "id": "TpAc-22",
+            "nombre": "Microfono"
+        },
+        {
+            "id": "TpAc-23",
+            "nombre": "Monitor"
+        },
+        {
+            "id": "TpAc-18",
+            "nombre": "Mouse"
+        },
+        {
+            "id": "TpAc-19",
+            "nombre": "Puf"
+        },
+        {
+            "id": "TpAc-20",
+            "nombre": "Nevera"
+        },
+        {
+            "id": "TpAc-21",
+            "nombre": "Sala L"
+        },
+        {
+            "id": "TpAc-22",
+            "nombre": "Silla Ejecutiva"
+        },
+        {
+            "id": "TpAc-23",
+            "nombre": "Silla Gamer"
+        },
+        {
+            "id": "TpAc-24",
+            "nombre": "Silla"
+        },
+        {
+            "id": "TpAc-25",
+            "nombre": "Sofa"
+        },
+        {
+            "id": "TpAc-26",
+            "nombre": "Teclado"
+        },
+        {
+            "id": "TpAc-27",
+            "nombre": "Televisor"
+        }
+    ],
+    "personas": [
+
+    ],
+    "detalleMoviento": [
+        
+    ]
+}
