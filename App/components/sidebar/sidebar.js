@@ -32,25 +32,25 @@ export class SideBar extends HTMLElement{
                 </a>
                 <ul id="agregar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aA"]'>Activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Marca</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aM"]'>Marca</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aP"]'>Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Estado</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aE"]'>Estado</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aTp"]'>Tipo de Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de movimiento de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aTma"]'>Tipo de movimiento de activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["aTa"]'>Tipo de activo</a>
                     </li>
                 </ul>
             </li>
@@ -149,7 +149,29 @@ export class SideBar extends HTMLElement{
             </a>
         </div>
     </aside>
-        `
+        `;
+        this.querySelectorAll(".sidebar-link").forEach((val)=>{
+            val.addEventListener("click", (e)=>{
+                let data = JSON.parse(e.target.dataset.verocultar);
+                let mainContent = document.querySelector('#mainContent');
+                mainContent.innerHTML= "";
+                switch (data[0]){
+                    case 'aA':
+                        mainContent.innerHTML= "<form-register></form-register>";
+                        break;
+                    case 'c':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'v':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'f':
+                        mainContent.innerHTML= ""
+                }
+                e.stopImmediatePropagation();
+                e.preventDefault();
+            })
+        })
     }
     expandSidebar() {
         const hamburger = document.querySelector('#toggle-btn');
