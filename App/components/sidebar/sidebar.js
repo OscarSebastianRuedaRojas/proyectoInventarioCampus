@@ -61,25 +61,25 @@ export class SideBar extends HTMLElement{
                 </a>
                 <ul id="editar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edA"]'>Activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Marca</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edM"]'>Marca</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edP"]'>Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Estado</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edE"]'>Estado</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edTp"]'>Tipo de Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de movimiento de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edTma"]'>Tipo de movimiento de activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["edTa"]'>Tipo de activo</a>
                     </li>
                 </ul>
             </li>
@@ -90,25 +90,25 @@ export class SideBar extends HTMLElement{
                 </a>
                 <ul id="eliminar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elA"]'>Activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Marca</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elM"]'>Marca</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elP"]'>Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Estado</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elE"]'>Estado</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elTp"]'>Tipo de Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de movimiento de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elTma"]'>Tipo de movimiento de activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["elTa"]'>Tipo de activo</a>
                     </li>
                 </ul>
             </li>
@@ -119,25 +119,25 @@ export class SideBar extends HTMLElement{
                 </a>
                 <ul id="buscar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bA"]'>Activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Marca</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bM"]'>Marca</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bP"]'>Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Estado</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bE"]'>Estado</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bTp"]'>Tipo de Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de movimiento de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bTma"]'>Tipo de movimiento de activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Tipo de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["bTa"]'>Tipo de activo</a>
                     </li>
                 </ul>
             </li>
@@ -159,14 +159,87 @@ export class SideBar extends HTMLElement{
                     case 'aA':
                         mainContent.innerHTML= "<form-register></form-register>";
                         break;
-                    case 'c':
+                    case 'aM':
                         mainContent.innerHTML= "";
                         break;
-                    case 'v':
+                    case 'aP':
                         mainContent.innerHTML= "";
                         break;
-                    case 'f':
-                        mainContent.innerHTML= ""
+                    case 'aE':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'aTp':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'aTma':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'aTa':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edA':
+                        mainContent.innerHTML= "<form-register></form-register>";
+                        break;
+                    case 'edM':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edP':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edE':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edTp':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edTma':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'edTa':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elA':
+                        mainContent.innerHTML= "<form-register></form-register>";
+                        break;
+                    case 'elM':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elP':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elE':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elTp':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elTma':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'elTa':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bA':
+                        mainContent.innerHTML= "<form-register></form-register>";
+                        break;
+                    case 'bM':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bP':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bE':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bTp':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bTma':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'bTa':
+                        mainContent.innerHTML= "";
+                        break;
                 }
                 e.stopImmediatePropagation();
                 e.preventDefault();
