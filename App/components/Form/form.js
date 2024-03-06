@@ -8,7 +8,7 @@ export class Form extends HTMLElement {
         <style rel="stylesheet">
             @import "./App/components/Form/form.css"; 
         </style>
-        <div class="formCard" style="width: 18rem;">
+        <div class="formCard"">
                 <div class="formCard-body">
                     <form id="taskForm">
                         <fieldset>
