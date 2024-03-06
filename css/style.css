@@ -3,3 +3,7 @@ body {
     font-family: 'Poppins' , sans-serif;
 }
 /* componente sidebar */
+.mainContent{
+    width: 100%;
+    height: 100%;
+}
