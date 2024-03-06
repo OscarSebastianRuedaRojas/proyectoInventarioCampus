@@ -1,320 +1,320 @@
 {
-    "categoriaActivo": [
+    "assetsCategories": [
         {
             "id": "Ctg-1",
-            "nombre": "Juegos"
+            "name": "Juegos"
         },
         {
             "id": "Ctg-2",
-            "nombre": "Electrodomesticos"
+            "name": "Electrodomesticos"
         },
         {
             "id": "Ctg-3",
-            "nombre": "Mobiliario"
+            "name": "Mobiliario"
         },
         {
             "id": "Ctg-4",
-            "nombre": "Dispositivos"
+            "name": "Dispositivos"
         },
         {
             "id": "Ctg-5",
-            "nombre": "EquiposComputo"
+            "name": "EquiposComputo"
         }
     ],
-    "marcas": [
+    "brands": [
         {
             "id": "Mc-1",
-            "nombre": "Whirpool"
+            "name": "Whirpool"
         },
         {
             "id": "Mc-2",
-            "nombre": "Challenger"
+            "name": "Challenger"
         },
         {
             "id": "Mc-3",
-            "nombre": "LG"
+            "name": "LG"
         },
         {
             "id": "Mc-4",
-            "nombre": "TCL"
+            "name": "TCL"
         },
         {
             "id": "Mc-5",
-            "nombre": "Midea"
+            "name": "Midea"
         },
         {
             "id": "Mc-6",
-            "nombre": "EPSON"
+            "name": "EPSON"
         },
         {
             "id": "Mc-7",
-            "nombre": "Sony"
+            "name": "Sony"
         },
         {
             "id": "Mc-8",
-            "nombre": "Compumax"
+            "name": "Compumax"
         },
         {
             "id": "Mc-9",
-            "nombre": "Kallio"
+            "name": "Kallio"
         },
         {
             "id": "Mc-10",
-            "nombre": "Collins"
+            "name": "Collins"
         },
         {
             "id": "Mc-11",
-            "nombre": "Omega"
+            "name": "Omega"
         },
         {
             "id": "Mc-12",
-            "nombre": "HP"
+            "name": "HP"
         },
         {
             "id": "Mc-13",
-            "nombre": "LENOVO"
+            "name": "LENOVO"
         },
         {
             "id": "Mc-14",
-            "nombre": "Acer"
+            "name": "Acer"
         },
         {
             "id": "Mc-15",
-            "nombre": "Asus"
+            "name": "Asus"
         },
         {
             "id": "Mc-16",
-            "nombre": "Trust"
+            "name": "Trust"
         }
     ],
-    "tipoPersona": [
+    "personTypes": [
         {
             "id": "TpPs-1",
-            "nombre": "Natural"
+            "name": "Natural"
         },
         {
             "id": "TpPs-2",
-            "nombre": "Juridica"
+            "name": "Juridica"
         }
     ],
-    "tipoMovActivo": [
+    "assetsMovementTypes": [
 
     ],
-    "historialActivo": [
+    "assetsHistories": [
 
     ],
-    "proveedor": [
+    "suppliers": [
         {
             "id": "Prv-1",
-            "nombre": "Cencosud Colombia Sa",
+            "name": "Cencosud Colombia Sa",
             "email": "sac@tiendasjumbo.co"
         },
         {
             "id": "Prv-2",
-            "nombre": "Colombiana De Comercio",
+            "name": "Colombiana De Comercio",
             "email": "soporte.proveedores@colcomercio.com.co"
         },
         {
             "id": "Prv-3",
-            "nombre": "Colombiana De Comercio",
+            "name": "Colombiana De Comercio",
             "email": "soporte.proveedores@colcomercio.com.co"
         },
         {
             "id": "Prv-4",
-            "nombre": "Compumax Computer",
+            "name": "Compumax Computer",
             "email": "contactanos@compumax.com"
         },
         {
             "id": "Prv-5",
-            "nombre": "Decathlon Colombia Sas",
+            "name": "Decathlon Colombia Sas",
             "email": "dsa.contact@decathlon.com"
         },
         {
             "id": "Prv-6",
-            "nombre": "Di+Seña Soluciones Arquitectonicas Sas",
+            "name": "Di+Seña Soluciones Arquitectonicas Sas",
             "email": "disenasolucionesarq@gmail.com"
         },
         {
             "id": "Prv-7",
-            "nombre": "Simaro Colombia Sas",
+            "name": "Simaro Colombia Sas",
             "email": "info@simaro.co"
         },
         {
             "id": "Prv-8",
-            "nombre": "Sodimac Colombia Sa",
+            "name": "Sodimac Colombia Sa",
             "email": "contactocomercial@homecenter.co"
         },
         {
             "id": "Prv-9",
-            "nombre": "Tecnomarketink La 33 Sas",
+            "name": "Tecnomarketink La 33 Sas",
             "email": "Información no disponible."
         }
     ],
-    "estados":[
+    "status":[
         {
             "id": "Es-0",
-            "nombre": "No asignado"
+            "name": "No asignado"
         },
         {
             "id": "Es-1",
-            "nombre": "Asignado"
+            "name": "Asignado"
         },
         {
             "id": "Es-2",
-            "nombre": "Dado de baja por daño"
+            "name": "Dado de baja por daño"
         },
         {
             "id": "Es-3",
-            "nombre": "En reparacion y/o Garantia"
+            "name": "En reparacion y/o Garantia"
         }
     ],
-    "telefonoPersona": [
+    "personPhones": [
 
     ],
-    "asignacion": [
+    "assignments": [
 
     ],
-    "tipoActivo": [
+    "typeAssets": [
         {
             "id": "TpAc-1",
-            "nombre": "Aire Acondicionado"
+            "name": "Aire Acondicionado"
         },
         {
             "id": "TpAc-2",
-            "nombre": "Archivador"
+            "name": "Archivador"
         },
         {
             "id": "TpAc-3",
-            "nombre": "Atril para portatil"
+            "name": "Atril para portatil"
         },
         {
             "id": "TpAc-4",
-            "nombre": "Biblioteca"
+            "name": "Biblioteca"
         },
         {
             "id": "TpAc-5",
-            "nombre": "Bodg50"
+            "name": "Bodg50"
         },
         {
             "id": "TpAc-6",
-            "nombre": "Cajas"
+            "name": "Cajas"
         },
         {
             "id": "TpAc-7",
-            "nombre": "Camara"
+            "name": "Camara"
         },
         {
             "id": "TpAc-8",
-            "nombre": "Computador"
+            "name": "Computador"
         },
         {
             "id": "TpAc-9",
-            "nombre": "Centro House"
+            "name": "Centro House"
         },
         {
             "id": "TpAc-10",
-            "nombre": "CPU"
+            "name": "CPU"
         },
         {
             "id": "TpAc-11",
-            "nombre": "Diadema"
+            "name": "Diadema"
         },
         {
             "id": "TpAc-12",
-            "nombre": "Dispensador de Agua"
+            "name": "Dispensador de Agua"
         },
         {
             "id": "TpAc-13",
-            "nombre": "Estructura"
+            "name": "Estructura"
         },
         {
             "id": "TpAc-14",
-            "nombre": "Espaldares"
+            "name": "Espaldares"
         },
         {
             "id": "TpAc-15",
-            "nombre": "Horno"
+            "name": "Horno"
         },
         {
             "id": "TpAc-16",
-            "nombre": "Mesa"
+            "name": "Mesa"
         },
         {
             "id": "TpAc-17",
-            "nombre": "Impresora"
+            "name": "Impresora"
         },
         {
             "id": "TpAc-18",
-            "nombre": "Juegos varios"
+            "name": "Juegos varios"
         },
         {
             "id": "TpAc-19",
-            "nombre": "Locker"
+            "name": "Locker"
         },
         {
             "id": "TpAc-20",
-            "nombre": "Maquinas"
+            "name": "Maquinas"
         },
         {
             "id": "TpAc-21",
-            "nombre": "Mesa Ping Pong"
+            "name": "Mesa Ping Pong"
         },
         {
             "id": "TpAc-22",
-            "nombre": "Microfono"
+            "name": "Microfono"
         },
         {
             "id": "TpAc-23",
-            "nombre": "Monitor"
+            "name": "Monitor"
         },
         {
             "id": "TpAc-18",
-            "nombre": "Mouse"
+            "name": "Mouse"
         },
         {
             "id": "TpAc-19",
-            "nombre": "Puf"
+            "name": "Puf"
         },
         {
             "id": "TpAc-20",
-            "nombre": "Nevera"
+            "name": "Nevera"
         },
         {
             "id": "TpAc-21",
-            "nombre": "Sala L"
+            "name": "Sala L"
         },
         {
             "id": "TpAc-22",
-            "nombre": "Silla Ejecutiva"
+            "name": "Silla Ejecutiva"
         },
         {
             "id": "TpAc-23",
-            "nombre": "Silla Gamer"
+            "name": "Silla Gamer"
         },
         {
             "id": "TpAc-24",
-            "nombre": "Silla"
+            "name": "Silla"
         },
         {
             "id": "TpAc-25",
-            "nombre": "Sofa"
+            "name": "Sofa"
         },
         {
             "id": "TpAc-26",
-            "nombre": "Teclado"
+            "name": "Teclado"
         },
         {
             "id": "TpAc-27",
-            "nombre": "Televisor"
+            "name": "Televisor"
         }
     ],
-    "personas": [
+    "persons": [
 
     ],
-    "detalleMoviento": [
+    "detailMovements": [
 
     ],
-    "activos": [
+    "assests": [
 
     ]
 }
