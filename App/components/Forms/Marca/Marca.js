@@ -25,6 +25,7 @@ export class FormMarca extends HTMLElement {
                     </form>
                 </div>
             </div>
+            <custom-alert></custom-alert>
         `
     }
     async postData() {
@@ -33,8 +34,7 @@ export class FormMarca extends HTMLElement {
             const EstadosJSON = await getProducts("/Marcas");
             let data = Object.fromEntries(new FormData(form).entries());
             data.id = `Mc-${(Object.keys(EstadosJSON).length)+1}`
-            postProducts("/Marcas", data)
-            alert("Marca agregada.")
+            setTimeout(() =>  postProducts("/Marcas", data), 1500)
             e.preventDefault();
             e.stopPropagation();
         })

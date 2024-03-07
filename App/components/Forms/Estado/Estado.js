@@ -1,3 +1,4 @@
+
 import { getProducts } from '../../../../Api/db/db.js';
 import { postProducts } from '../../../../Api/db/db.js';
 export class FormEstado extends HTMLElement {
@@ -25,6 +26,7 @@ export class FormEstado extends HTMLElement {
                     </form>
                 </div>
             </div>
+            <custom-alert></custom-alert>
         `
     }
     async postData() {
@@ -33,8 +35,7 @@ export class FormEstado extends HTMLElement {
             const EstadosJSON = await getProducts("/Estados");
             let data = Object.fromEntries(new FormData(form).entries());
             data.id = `Es-${(Object.keys(EstadosJSON).length)}`
-            postProducts("/Estados", data)
-            alert("Estado agregado.")
+            setTimeout(() => postProducts("/Estados", data), 1500)
             e.preventDefault();
             e.stopPropagation();
         })

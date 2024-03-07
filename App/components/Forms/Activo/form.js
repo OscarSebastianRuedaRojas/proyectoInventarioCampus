@@ -1,3 +1,4 @@
+import { postProducts } from '../../../../Api/db/db.js';
 export class Form extends HTMLElement {
     constructor() {
         super()
@@ -77,6 +78,7 @@ export class Form extends HTMLElement {
                     </form>
                 </div>
             </div>
+            <custom-alert></custom-alert>
         `
     }
     async getAndShowData() {

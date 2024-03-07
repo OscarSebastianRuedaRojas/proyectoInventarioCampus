@@ -1,0 +1,41 @@
+
+.alert {
+    padding: 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    margin-bottom: 15px;
+    border-radius: 5px;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 1;
+    width: 250px;
+    animation: slideIn 0.5s, slideOut 1s 2.5s; 
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
+@keyframes slideIn {
+    from {bottom: -100px; opacity: 0;}
+    to {bottom: 0; opacity: 1;}
+}
+
+@keyframes slideOut {
+    from {bottom: 0; opacity: 1;}
+    to {bottom: -100px; opacity: 0;}
+}

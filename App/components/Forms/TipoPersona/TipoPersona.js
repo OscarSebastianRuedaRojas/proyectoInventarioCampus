@@ -25,6 +25,7 @@ export class FormTipoPersona extends HTMLElement {
                     </form>
                 </div>
             </div>
+            <custom-alert></custom-alert>
         `
     }
     async postData() {
@@ -33,8 +34,7 @@ export class FormTipoPersona extends HTMLElement {
             const EstadosJSON = await getProducts("/TiposPersonas");
             let data = Object.fromEntries(new FormData(form).entries());
             data.id = `TpPs-${(Object.keys(EstadosJSON).length)+1}`
-            postProducts("/TiposPersonas", data)
-            alert("Tipo de persona agregada.")
+            setTimeout(() => postProducts("/TiposPersonas", data), 1500)
             e.preventDefault();
             e.stopPropagation();
         })

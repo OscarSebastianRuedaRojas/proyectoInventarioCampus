@@ -430,18 +430,6 @@
     {
       "id": "Es-3",
       "name": "En reparacion y/o Garantia"
-    },
-    {
-      "id": "Es-4",
-      "name": "felipe"
-    },
-    {
-      "id": "Es-5",
-      "name": "Frank"
-    },
-    {
-      "id": "Es-6",
-      "name": "felipe"
     }
   ],
   "PersonasTelefonos": [],
@@ -840,18 +828,21 @@
       "Equipos.Cómputo": "Teclados ",
       "Electrodomésticos ": "Dispensadores de Agua ",
       "Dispositivos": "Camaras ",
-      "Otros ": "Mostradores"
+      "Otros ": "Mostradores",
+      "id": "966a"
     },
     {
       "Codigo Transacción": 420,
       "Categoría ": "Otros ",
       "Mobiliario ": "Cajones de Oficina ",
       "Electrodomésticos ": "Microondas",
-      "Dispositivos": "Rourter "
+      "Dispositivos": "Rourter ",
+      "id": "d9c0"
     },
     {
       "Codigo Transacción": 111,
-      "Mobiliario ": "Vitrinas"
+      "Mobiliario ": "Vitrinas",
+      "id": "a49e"
     }
   ]
 }
