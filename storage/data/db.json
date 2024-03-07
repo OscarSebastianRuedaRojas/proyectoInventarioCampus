@@ -1,845 +1,857 @@
 {
-    "Activos": [
-        {
-            "id" : "Ac-1",
-            "Codigo Transacción" : "",
-            "Formulario" : 1,
-            "MarcaId" : "Mc-17",
-            "categoryId" : "Ctg-1",
-            "TipoActivoId" : "TpAc-21",
-            "Valor unitario" : "2200000",
-            "ProveedoreId" : "Prv-5",
-            "Serial" : "N/A",
-            "EmpresaId" : "Emp-1",
-            "EstadoId" : "Es-0",
-            "UbicacioneId" : "ubc-1"
-        },
-        {
-            "id": "Ac-2",
-            "Codigo Transacción": "",
-            "Formulario": 2,
-            "MarcaId": "Mc-6",
-            "categoryId": "Ctg-2",
-            "TipoActivoId": "TpAc-23",
-            "Valor unitario": "1500000",
-            "ProveedoreId": "Prv-4",
-            "Serial": "N/A",
-            "EmpresaId": "Emp-4",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-17"
-        },
-        {
-            "id": "Ac-3",
-            "Codigo Transacción": "",
-            "Formulario": 3,
-            "MarcaId": "Mc-1",
-            "categoryId": "Ctg-3",
-            "TipoActivoId": "TpAc-4",
-            "Valor unitario": "1800000",
-            "ProveedoreId": "Prv-1",
-            "Serial": "ABC123",
-            "EmpresaId": "Emp-1",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-4"
-        },
-        {
-            "id": "Ac-4",
-            "Codigo Transacción": "",
-            "Formulario": 4,
-            "MarcaId": "Mc-3",
-            "categoryId": "Ctg-5",
-            "TipoActivoId": "TpAc-17",
-            "Valor unitario": "900000",
-            "ProveedoreId": "Prv-3",
-            "Serial": "XYZ789",
-            "EmpresaId": "Emp-3",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-5"
-        },
-        {
-            "id": "Ac-5",
-            "Codigo Transacción": "",
-            "Formulario": 5,
-            "MarcaId": "Mc-7",
-            "categoryId": "Ctg-4",
-            "TipoActivoId": "TpAc-22",
-            "Valor unitario": "750000",
-            "ProveedoreId": "Prv-5",
-            "Serial": "DEF456",
-            "EmpresaId": "Emp-2",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-3"
-        },
-        {
-            "id": "Ac-6",
-            "Codigo Transacción": "",
-            "Formulario": 6,
-            "MarcaId": "Mc-11",
-            "categoryId": "Ctg-1",
-            "TipoActivoId": "TpAc-18",
-            "Valor unitario": "1200000",
-            "ProveedoreId": "Prv-7",
-            "Serial": "GHI789",
-            "EmpresaId": "Emp-1",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-9"
-        },
-        {
-            "id": "Ac-7",
-            "Codigo Transacción": "",
-            "Formulario": 7,
-            "MarcaId": "Mc-15",
-            "categoryId": "Ctg-2",
-            "TipoActivoId": "TpAc-25",
-            "Valor unitario": "2000000",
-            "ProveedoreId": "Prv-6",
-            "Serial": "JKL012",
-            "EmpresaId": "Emp-4",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-8"
-        },
-        {
-            "id": "Ac-8",
-            "Codigo Transacción": "",
-            "Formulario": 8,
-            "MarcaId": "Mc-13",
-            "categoryId": "Ctg-5",
-            "TipoActivoId": "TpAc-19",
-            "Valor unitario": "1600000",
-            "ProveedoreId": "Prv-2",
-            "Serial": "MNO345",
-            "EmpresaId": "Emp-3",
-            "EstadoId": "Es-1",
-            "UbicacioneId": "ubc-12"
-        },
-        {
-            "id": "Ac-9",
-            "Codigo Transacción": "",
-            "Formulario": 9,
-            "Descripcion": "Aire acondicionado LG para uso doméstico",
-            "MarcaId": "Mc-3",
-            "categoryId": "Ctg-2",
-            "TipoActivoId": "TpAc-1",
-            "Valor unitario": "2800000",
-            "ProveedoreId": "Prv-3",
-            "Serial": "ABC123",
-            "EmpresaId": "Emp-2",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-2"
-        },
-        {
-            "id": "Ac-10",
-            "Codigo Transacción": "",
-            "Formulario": 10,
-            "Descripcion": "Silla ejecutiva ergonómica marca Trust",
-            "MarcaId": "Mc-16",
-            "categoryId": "Ctg-3",
-            "TipoActivoId": "TpAc-22",
-            "Valor unitario": "1500000",
-            "ProveedoreId": "Prv-9",
-            "Serial": "XYZ789",
-            "EmpresaId": "Emp-3",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-12"
-        },
-        {
-            "id": "Ac-11",
-            "Codigo Transacción": "",
-            "Formulario": 11,
-            "Descripcion": "Impresora multifunción Epson para oficina",
-            "MarcaId": "Mc-6",
-            "categoryId": "Ctg-5",
-            "TipoActivoId": "TpAc-17",
-            "Valor unitario": "1900000",
-            "ProveedoreId": "Prv-4",
-            "Serial": "DEF456",
-            "EmpresaId": "Emp-1",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-6"
-        },
-        {
-            "id": "Ac-12",
-            "Codigo Transacción": "",
-            "Formulario": 12,
-            "Descripcion": "Mesa de ping pong plegable para espacios comunes",
-            "MarcaId": "Mc-17",
-            "categoryId": "Ctg-1",
-            "TipoActivoId": "TpAc-21",
-            "Valor unitario": "3200000",
-            "ProveedoreId": "Prv-5",
-            "Serial": "GHI789",
-            "EmpresaId": "Emp-2",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-1"
-        },
-        {
-            "id": "Ac-13",
-            "Codigo Transacción": "",
-            "Formulario": 13,
-            "Descripcion": "Sofá de cuero negro para área de descanso",
-            "MarcaId": "Mc-12",
-            "categoryId": "Ctg-3",
-            "TipoActivoId": "TpAc-25",
-            "Valor unitario": "3800000",
-            "ProveedoreId": "Prv-7",
-            "Serial": "JKL012",
-            "EmpresaId": "Emp-4",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-3"
-        },
-        {
-            "id": "Ac-14",
-            "Codigo Transacción": "",
-            "Formulario": 14,
-            "Descripcion": "Cámara de seguridad Sony para vigilancia",
-            "MarcaId": "Mc-7",
-            "categoryId": "Ctg-4",
-            "TipoActivoId": "TpAc-7",
-            "Valor unitario": "2400000",
-            "ProveedoreId": "Prv-6",
-            "Serial": "MNO345",
-            "EmpresaId": "Emp-3",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-5"
-        },
-        {
-            "id": "Ac-15",
-            "Codigo Transacción": "",
-            "Formulario": 15,
-            "Descripcion": "Máquina de ejercicio para sala de fitness",
-            "MarcaId": "Mc-4",
-            "categoryId": "Ctg-1",
-            "TipoActivoId": "TpAc-20",
-            "Valor unitario": "4500000",
-            "ProveedoreId": "Prv-2",
-            "Serial": "PQR678",
-            "EmpresaId": "Emp-4",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-9"
-        },
-        {
-            "id": "Ac-16",
-            "Codigo Transacción": "",
-            "Formulario": 16,
-            "Descripcion": "Televisor LED Asus de 55 pulgadas",
-            "MarcaId": "Mc-15",
-            "categoryId": "Ctg-5",
-            "TipoActivoId": "TpAc-27",
-            "Valor unitario": "2900000",
-            "ProveedoreId": "Prv-8",
-            "Serial": "STU901",
-            "EmpresaId": "Emp-1",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-8"
-        },
-        {
-            "id": "Ac-17",
-            "Codigo Transacción": "",
-            "Formulario": 17,
-            "Descripcion": "Silla gamer con diseño ergonómico",
-            "MarcaId": "Mc-9",
-            "categoryId": "Ctg-3",
-            "TipoActivoId": "TpAc-23",
-            "Valor unitario": "2100000",
-            "ProveedoreId": "Prv-5",
-            "Serial": "VWX123",
-            "EmpresaId": "Emp-2",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-15"
-        },
-        {
-            "id": "Ac-18",
-            "Codigo Transacción": "",
-            "Formulario": 18,
-            "Descripcion": "Nevera compacta para oficina",
-            "MarcaId": "Mc-2",
-            "categoryId": "Ctg-2",
-            "TipoActivoId": "TpAc-20",
-            "Valor unitario": "1800000",
-            "ProveedoreId": "Prv-9",
-            "Serial": "YZA234",
-            "EmpresaId": "Emp-3",
-            "EstadoId": "Es-0",
-            "UbicacioneId": "ubc-14"
-        }
-    ],
-    "categorias": [
-        {
-            "id": "Ctg-1",
-            "name": "Juegos"
-        },
-        {
-            "id": "Ctg-2",
-            "name": "Electrodomesticos"
-        },
-        {
-            "id": "Ctg-3",
-            "name": "Mobiliario"
-        },
-        {
-            "id": "Ctg-4",
-            "name": "Dispositivos"
-        },
-        {
-            "id": "Ctg-5",
-            "name": "EquiposComputo"
-        }
-    ],
-    "Marcas": [
-        {
-            "id": "Mc-1",
-            "name": "Whirpool"
-        },
-        {
-            "id": "Mc-2",
-            "name": "Challenger"
-        },
-        {
-            "id": "Mc-3",
-            "name": "LG"
-        },
-        {
-            "id": "Mc-4",
-            "name": "TCL"
-        },
-        {
-            "id": "Mc-5",
-            "name": "Midea"
-        },
-        {
-            "id": "Mc-6",
-            "name": "EPSON"
-        },
-        {
-            "id": "Mc-7",
-            "name": "Sony"
-        },
-        {
-            "id": "Mc-8",
-            "name": "Compumax"
-        },
-        {
-            "id": "Mc-9",
-            "name": "Kallio"
-        },
-        {
-            "id": "Mc-10",
-            "name": "Collins"
-        },
-        {
-            "id": "Mc-11",
-            "name": "Omega"
-        },
-        {
-            "id": "Mc-12",
-            "name": "HP"
-        },
-        {
-            "id": "Mc-13",
-            "name": "LENOVO"
-        },
-        {
-            "id": "Mc-14",
-            "name": "Acer"
-        },
-        {
-            "id": "Mc-15",
-            "name": "Asus"
-        },
-        {
-            "id": "Mc-16",
-            "name": "Trust"
-        },
-        {
-            "id": "Mc-17",
-            "name": "Decathlon Colombia Sas"
-        }
-    ],
-    "TiposPersonas": [
-        {
-            "id": "TpPs-1",
-            "name": "Natural"
-        },
-        {
-            "id": "TpPs-2",
-            "name": "Juridica"
-        }
-    ],
-    "TipoDeMovimientos": [],
-    "HistorialActivos": [],
-    "Proveedores": [
-        {
-            "id": "Prv-1",
-            "name": "Cencosud Colombia Sa",
-            "email": "sac@tiendasjumbo.co"
-        },
-        {
-            "id": "Prv-2",
-            "name": "Colombiana De Comercio",
-            "email": "soporte.proveedores@colcomercio.com.co"
-        },
-        {
-            "id": "Prv-3",
-            "name": "Colombiana De Comercio",
-            "email": "soporte.proveedores@colcomercio.com.co"
-        },
-        {
-            "id": "Prv-4",
-            "name": "Compumax Computer",
-            "email": "contactanos@compumax.com"
-        },
-        {
-            "id": "Prv-5",
-            "name": "Decathlon Colombia Sas",
-            "email": "dsa.contact@decathlon.com"
-        },
-        {
-            "id": "Prv-6",
-            "name": "Di+Seña Soluciones Arquitectonicas Sas",
-            "email": "disenasolucionesarq@gmail.com"
-        },
-        {
-            "id": "Prv-7",
-            "name": "Simaro Colombia Sas",
-            "email": "info@simaro.co"
-        },
-        {
-            "id": "Prv-8",
-            "name": "Sodimac Colombia Sa",
-            "email": "contactocomercial@homecenter.co"
-        },
-        {
-            "id": "Prv-9",
-            "name": "Tecnomarketink La 33 Sas",
-            "email": "Información no disponible."
-        }
-    ],
-    "Estados": [
-        {
-            "id": "Es-0",
-            "name": "No asignado"
-        },
-        {
-            "id": "Es-1",
-            "name": "Asignado"
-        },
-        {
-            "id": "Es-2",
-            "name": "Dado de baja por daño"
-        },
-        {
-            "id": "Es-3",
-            "name": "En reparacion y/o Garantia"
-        }
-    ],
-    "PersonasTelefonos": [],
-    "asignaciones": [],
-    "TipoActivos": [
-        {
-            "id": "TpAc-1",
-            "name": "Aire Acondicionado"
-        },
-        {
-            "id": "TpAc-2",
-            "name": "Archivador"
-        },
-        {
-            "id": "TpAc-3",
-            "name": "Atril para portatil"
-        },
-        {
-            "id": "TpAc-4",
-            "name": "Biblioteca"
-        },
-        {
-            "id": "TpAc-5",
-            "name": "Bodg50"
-        },
-        {
-            "id": "TpAc-6",
-            "name": "Cajas"
-        },
-        {
-            "id": "TpAc-7",
-            "name": "Camara"
-        },
-        {
-            "id": "TpAc-8",
-            "name": "Computador"
-        },
-        {
-            "id": "TpAc-9",
-            "name": "Centro House"
-        },
-        {
-            "id": "TpAc-10",
-            "name": "CPU"
-        },
-        {
-            "id": "TpAc-11",
-            "name": "Diadema"
-        },
-        {
-            "id": "TpAc-12",
-            "name": "Dispensador de Agua"
-        },
-        {
-            "id": "TpAc-13",
-            "name": "Estructura"
-        },
-        {
-            "id": "TpAc-14",
-            "name": "Espaldares"
-        },
-        {
-            "id": "TpAc-15",
-            "name": "Horno"
-        },
-        {
-            "id": "TpAc-16",
-            "name": "Mesa"
-        },
-        {
-            "id": "TpAc-17",
-            "name": "Impresora"
-        },
-        {
-            "id": "TpAc-18",
-            "name": "Juegos varios"
-        },
-        {
-            "id": "TpAc-19",
-            "name": "Locker"
-        },
-        {
-            "id": "TpAc-20",
-            "name": "Maquinas"
-        },
-        {
-            "id": "TpAc-21",
-            "name": "Mesa Ping Pong"
-        },
-        {
-            "id": "TpAc-22",
-            "name": "Microfono"
-        },
-        {
-            "id": "TpAc-23",
-            "name": "Monitor"
-        },
-        {
-            "id": "TpAc-18",
-            "name": "Mouse"
-        },
-        {
-            "id": "TpAc-19",
-            "name": "Puf"
-        },
-        {
-            "id": "TpAc-20",
-            "name": "Nevera"
-        },
-        {
-            "id": "TpAc-21",
-            "name": "Sala L"
-        },
-        {
-            "id": "TpAc-22",
-            "name": "Silla Ejecutiva"
-        },
-        {
-            "id": "TpAc-23",
-            "name": "Silla Gamer"
-        },
-        {
-            "id": "TpAc-24",
-            "name": "Silla"
-        },
-        {
-            "id": "TpAc-25",
-            "name": "Sofa"
-        },
-        {
-            "id": "TpAc-26",
-            "name": "Teclado"
-        },
-        {
-            "id": "TpAc-27",
-            "name": "Televisor"
-        }
-    ],
-    "Personas": [],
-    "Ubicaciones": [
-        {
-            "id": "ubc-1",
-            "name": "Zona Hunters"
-        },
-        {
-            "id": "ubc-2",
-            "name": "Cafetería"
-        },
-        {
-            "id": "ubc-3",
-            "name": "Coworking"
-        },
-        {
-            "id": "ubc-4",
-            "name": "Salones Campus"
-        },
-        {
-            "id": "ubc-5",
-            "name": "Zona Común ZF"
-        },
-        {
-            "id": "ubc-6",
-            "name": "Sala Azul"
-        },
-        {
-            "id": "ubc-7",
-            "name": "Sala Morada"
-        },
-        {
-            "id": "ubc-8",
-            "name": "Sala Profesores"
-        },
-        {
-            "id": "ubc-9",
-            "name": "Auditorio"
-        },
-        {
-            "id": "ubc-10",
-            "name": "Área Tech"
-        },
-        {
-            "id": "ubc-11",
-            "name": "Salón Inglés"
-        },
-        {
-            "id": "ubc-12",
-            "name": "Salón Apolo"
-        },
-        {
-            "id": "ubc-13",
-            "name": "Salón Artemis"
-        },
-        {
-            "id": "ubc-14",
-            "name": "Salón Sputnik"
-        },
-        {
-            "id": "ubc-15",
-            "name": "Salón Skylab"
-        },
-        {
-            "id": "ubc-16",
-            "name": "Sala de Juntas"
-        },
-        {
-            "id": "ubc-17",
-            "name": "Área Comercial"
-        },
-        {
-            "id": "ubc-20",
-            "name": "Guardado"
-        },
-        {
-            "id": "ubc-21",
-            "name": "Salón Review"
-        },
-        {
-            "id": "ubc-22",
-            "name": "Carlos Rueda Consuegra"
-        },
-        {
-            "id": "ubc-23",
-            "name": "Alejandra Niño Perez"
-        },
-        {
-            "id": "ubc-24",
-            "name": "Silvia Juliana Moreno"
-        },
-        {
-            "id": "ubc-25",
-            "name": "Pedro Gomez Bonilla"
-        },
-        {
-            "id": "ubc-26",
-            "name": "Admon Campus"
-        },
-        {
-            "id": "ubc-27",
-            "name": "Angie Suarez"
-        },
-        {
-            "id": "ubc-28",
-            "name": "Miguel Castro"
-        },
-        {
-            "id": "ubc-29",
-            "name": "Diana Pinzon"
-        },
-        {
-            "id": "ubc-30",
-            "name": "Vanessa Martinez"
-        },
-        {
-            "id": "ubc-31",
-            "name": "Luisa Saavedra"
-        },
-        {
-            "id": "ubc-32",
-            "name": "Juan Carlos Mariño"
-        },
-        {
-            "id": "ubc-33",
-            "name": "Owel Polanco"
-        },
-        {
-            "id": "ubc-34",
-            "name": "Delli Marcela Parra"
-        },
-        {
-            "id": "ubc-35",
-            "name": "Karen Lorena Celis"
-        },
-        {
-            "id": "ubc-36",
-            "name": "Karol Rodriguez"
-        },
-        {
-            "id": "ubc-37",
-            "name": "Jose Tarazona"
-        },
-        {
-            "id": "ubc-38",
-            "name": "Camilo Moreno"
-        },
-        {
-            "id": "ubc-39",
-            "name": "Silvia Moreno"
-        },
-        {
-            "id": "ubc-40",
-            "name": "Leonardo Corredor"
-        },
-        {
-            "id": "ubc-41",
-            "name": "Catalina Carreño"
-        },
-        {
-            "id": "ubc-42",
-            "name": "Sala Asesoria"
-        },
-        {
-            "id": "ubc-43",
-            "name": "Sala Fucsia"
-        },
-        {
-            "id": "ubc-44",
-            "name": "Zona Tech Gerenciales"
-        },
-        {
-            "id": "ubc-53",
-            "name": "Sala Amarilla"
-        },
-        {
-            "id": "ubc-54",
-            "name": "Sala Verde"
-        },
-        {
-            "id": "ubc-57",
-            "name": "Sala de Juntas"
-        },
-        {
-            "id" : "ubc-171",
-            "name" : "CONEXALAB"
-        },
-        {
-            "id" : "ubc-172",
-            "name" : "Houston"
-        },
-        {
-            "id" : "ubc-173",
-            "name" : "CT Cámaras"
-        },
-        {
-            "id" : "ubc-174",
-            "name" : "Campuslands"
-        },
-        {
-            "id" : "ubc-175",
-            "name" : "Andres Lizarazo Mendoza"
-        }
-    ],
-    "DetallesMovimientos": [],
-    "Empresas": [
-        {
-            "id": "Emp-1",
-            "name": "Campuslands",
-            "Codigo Transacción": 311,
-            "Categoría ": "Mobiliario ",
-            "Mobiliario ": "Mesas",
-            "Equipos.Cómputo": "Audifonos",
-            "Electrodomésticos ": "Aires Acondicionados ",
-            "Juegos ": "Maquinitas ",
-            "Dispositivos": "Parlantes ",
-            "Otros ": "Luces Led"
-        },
-        {
-            "id": "Emp-2",
-            "name": "Grupo Bien Pensado ",
-            "Codigo Transacción": 324,
-            "Categoría ": "Equipos.Cómputo",
-            "Mobiliario ": "Lockers",
-            "Equipos.Cómputo": "Monitores ",
-            "Electrodomésticos ": "Televisores ",
-            "Juegos ": "Mesa de Ping Pong",
-            "Dispositivos": "Planta de Música",
-            "Otros ": "Luces "
-        },
-        {
-            "id": "Emp-3",
-            "name": "Control de Mercancias ",
-            "Codigo Transacción": 318,
-            "Categoría ": "Electrodomésticos ",
-            "Mobiliario ": "Archivadores",
-            "Equipos.Cómputo": "CPU",
-            "Electrodomésticos ": "Neveras ",
-            "Dispositivos": "Impresoras ",
-            "Otros ": "Caja Fuerte "
-        },
-        {
-            "id": "Emp-4",
-            "name": "Admin Campuslands",
-            "Codigo Transacción": 425,
-            "Categoría ": "Juegos ",
-            "Mobiliario ": "Sillas",
-            "Equipos.Cómputo": "Mouses",
-            "Electrodomésticos ": "Congeladores ",
-            "Dispositivos": "Microfonos ",
-            "Otros ": "Elemento de Metal "
-        }
-    ],
-    "Datos": [
-        {
-            "Codigo Transacción": 327,
-            "Categoría ": "Dispositivos ",
-            "Mobiliario ": "Escritorios",
-            "Equipos.Cómputo": "Teclados ",
-            "Electrodomésticos ": "Dispensadores de Agua ",
-            "Dispositivos": "Camaras ",
-            "Otros ": "Mostradores"
-        },
-        {
-            "Codigo Transacción": 420,
-            "Categoría ": "Otros ",
-            "Mobiliario ": "Cajones de Oficina ",
-            "Electrodomésticos ": "Microondas",
-            "Dispositivos": "Rourter "
-        },
-        {
-            "Codigo Transacción": 111,
-            "Mobiliario ": "Vitrinas"
-        }
-    ]
+  "Activos": [
+    {
+      "id": "Ac-1",
+      "Codigo Transacción": "",
+      "Formulario": 1,
+      "MarcaId": "Mc-17",
+      "categoryId": "Ctg-1",
+      "TipoActivoId": "TpAc-21",
+      "Valor unitario": "2200000",
+      "ProveedoreId": "Prv-5",
+      "Serial": "N/A",
+      "EmpresaId": "Emp-1",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-1"
+    },
+    {
+      "id": "Ac-2",
+      "Codigo Transacción": "",
+      "Formulario": 2,
+      "MarcaId": "Mc-6",
+      "categoryId": "Ctg-2",
+      "TipoActivoId": "TpAc-23",
+      "Valor unitario": "1500000",
+      "ProveedoreId": "Prv-4",
+      "Serial": "N/A",
+      "EmpresaId": "Emp-4",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-17"
+    },
+    {
+      "id": "Ac-3",
+      "Codigo Transacción": "",
+      "Formulario": 3,
+      "MarcaId": "Mc-1",
+      "categoryId": "Ctg-3",
+      "TipoActivoId": "TpAc-4",
+      "Valor unitario": "1800000",
+      "ProveedoreId": "Prv-1",
+      "Serial": "ABC123",
+      "EmpresaId": "Emp-1",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-4"
+    },
+    {
+      "id": "Ac-4",
+      "Codigo Transacción": "",
+      "Formulario": 4,
+      "MarcaId": "Mc-3",
+      "categoryId": "Ctg-5",
+      "TipoActivoId": "TpAc-17",
+      "Valor unitario": "900000",
+      "ProveedoreId": "Prv-3",
+      "Serial": "XYZ789",
+      "EmpresaId": "Emp-3",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-5"
+    },
+    {
+      "id": "Ac-5",
+      "Codigo Transacción": "",
+      "Formulario": 5,
+      "MarcaId": "Mc-7",
+      "categoryId": "Ctg-4",
+      "TipoActivoId": "TpAc-22",
+      "Valor unitario": "750000",
+      "ProveedoreId": "Prv-5",
+      "Serial": "DEF456",
+      "EmpresaId": "Emp-2",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-3"
+    },
+    {
+      "id": "Ac-6",
+      "Codigo Transacción": "",
+      "Formulario": 6,
+      "MarcaId": "Mc-11",
+      "categoryId": "Ctg-1",
+      "TipoActivoId": "TpAc-18",
+      "Valor unitario": "1200000",
+      "ProveedoreId": "Prv-7",
+      "Serial": "GHI789",
+      "EmpresaId": "Emp-1",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-9"
+    },
+    {
+      "id": "Ac-7",
+      "Codigo Transacción": "",
+      "Formulario": 7,
+      "MarcaId": "Mc-15",
+      "categoryId": "Ctg-2",
+      "TipoActivoId": "TpAc-25",
+      "Valor unitario": "2000000",
+      "ProveedoreId": "Prv-6",
+      "Serial": "JKL012",
+      "EmpresaId": "Emp-4",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-8"
+    },
+    {
+      "id": "Ac-8",
+      "Codigo Transacción": "",
+      "Formulario": 8,
+      "MarcaId": "Mc-13",
+      "categoryId": "Ctg-5",
+      "TipoActivoId": "TpAc-19",
+      "Valor unitario": "1600000",
+      "ProveedoreId": "Prv-2",
+      "Serial": "MNO345",
+      "EmpresaId": "Emp-3",
+      "EstadoId": "Es-1",
+      "UbicacioneId": "ubc-12"
+    },
+    {
+      "id": "Ac-9",
+      "Codigo Transacción": "",
+      "Formulario": 9,
+      "Descripcion": "Aire acondicionado LG para uso doméstico",
+      "MarcaId": "Mc-3",
+      "categoryId": "Ctg-2",
+      "TipoActivoId": "TpAc-1",
+      "Valor unitario": "2800000",
+      "ProveedoreId": "Prv-3",
+      "Serial": "ABC123",
+      "EmpresaId": "Emp-2",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-2"
+    },
+    {
+      "id": "Ac-10",
+      "Codigo Transacción": "",
+      "Formulario": 10,
+      "Descripcion": "Silla ejecutiva ergonómica marca Trust",
+      "MarcaId": "Mc-16",
+      "categoryId": "Ctg-3",
+      "TipoActivoId": "TpAc-22",
+      "Valor unitario": "1500000",
+      "ProveedoreId": "Prv-9",
+      "Serial": "XYZ789",
+      "EmpresaId": "Emp-3",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-12"
+    },
+    {
+      "id": "Ac-11",
+      "Codigo Transacción": "",
+      "Formulario": 11,
+      "Descripcion": "Impresora multifunción Epson para oficina",
+      "MarcaId": "Mc-6",
+      "categoryId": "Ctg-5",
+      "TipoActivoId": "TpAc-17",
+      "Valor unitario": "1900000",
+      "ProveedoreId": "Prv-4",
+      "Serial": "DEF456",
+      "EmpresaId": "Emp-1",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-6"
+    },
+    {
+      "id": "Ac-12",
+      "Codigo Transacción": "",
+      "Formulario": 12,
+      "Descripcion": "Mesa de ping pong plegable para espacios comunes",
+      "MarcaId": "Mc-17",
+      "categoryId": "Ctg-1",
+      "TipoActivoId": "TpAc-21",
+      "Valor unitario": "3200000",
+      "ProveedoreId": "Prv-5",
+      "Serial": "GHI789",
+      "EmpresaId": "Emp-2",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-1"
+    },
+    {
+      "id": "Ac-13",
+      "Codigo Transacción": "",
+      "Formulario": 13,
+      "Descripcion": "Sofá de cuero negro para área de descanso",
+      "MarcaId": "Mc-12",
+      "categoryId": "Ctg-3",
+      "TipoActivoId": "TpAc-25",
+      "Valor unitario": "3800000",
+      "ProveedoreId": "Prv-7",
+      "Serial": "JKL012",
+      "EmpresaId": "Emp-4",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-3"
+    },
+    {
+      "id": "Ac-14",
+      "Codigo Transacción": "",
+      "Formulario": 14,
+      "Descripcion": "Cámara de seguridad Sony para vigilancia",
+      "MarcaId": "Mc-7",
+      "categoryId": "Ctg-4",
+      "TipoActivoId": "TpAc-7",
+      "Valor unitario": "2400000",
+      "ProveedoreId": "Prv-6",
+      "Serial": "MNO345",
+      "EmpresaId": "Emp-3",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-5"
+    },
+    {
+      "id": "Ac-15",
+      "Codigo Transacción": "",
+      "Formulario": 15,
+      "Descripcion": "Máquina de ejercicio para sala de fitness",
+      "MarcaId": "Mc-4",
+      "categoryId": "Ctg-1",
+      "TipoActivoId": "TpAc-20",
+      "Valor unitario": "4500000",
+      "ProveedoreId": "Prv-2",
+      "Serial": "PQR678",
+      "EmpresaId": "Emp-4",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-9"
+    },
+    {
+      "id": "Ac-16",
+      "Codigo Transacción": "",
+      "Formulario": 16,
+      "Descripcion": "Televisor LED Asus de 55 pulgadas",
+      "MarcaId": "Mc-15",
+      "categoryId": "Ctg-5",
+      "TipoActivoId": "TpAc-27",
+      "Valor unitario": "2900000",
+      "ProveedoreId": "Prv-8",
+      "Serial": "STU901",
+      "EmpresaId": "Emp-1",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-8"
+    },
+    {
+      "id": "Ac-17",
+      "Codigo Transacción": "",
+      "Formulario": 17,
+      "Descripcion": "Silla gamer con diseño ergonómico",
+      "MarcaId": "Mc-9",
+      "categoryId": "Ctg-3",
+      "TipoActivoId": "TpAc-23",
+      "Valor unitario": "2100000",
+      "ProveedoreId": "Prv-5",
+      "Serial": "VWX123",
+      "EmpresaId": "Emp-2",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-15"
+    },
+    {
+      "id": "Ac-18",
+      "Codigo Transacción": "",
+      "Formulario": 18,
+      "Descripcion": "Nevera compacta para oficina",
+      "MarcaId": "Mc-2",
+      "categoryId": "Ctg-2",
+      "TipoActivoId": "TpAc-20",
+      "Valor unitario": "1800000",
+      "ProveedoreId": "Prv-9",
+      "Serial": "YZA234",
+      "EmpresaId": "Emp-3",
+      "EstadoId": "Es-0",
+      "UbicacioneId": "ubc-14"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "Ctg-1",
+      "name": "Juegos"
+    },
+    {
+      "id": "Ctg-2",
+      "name": "Electrodomesticos"
+    },
+    {
+      "id": "Ctg-3",
+      "name": "Mobiliario"
+    },
+    {
+      "id": "Ctg-4",
+      "name": "Dispositivos"
+    },
+    {
+      "id": "Ctg-5",
+      "name": "EquiposComputo"
+    }
+  ],
+  "Marcas": [
+    {
+      "id": "Mc-1",
+      "name": "Whirpool"
+    },
+    {
+      "id": "Mc-2",
+      "name": "Challenger"
+    },
+    {
+      "id": "Mc-3",
+      "name": "LG"
+    },
+    {
+      "id": "Mc-4",
+      "name": "TCL"
+    },
+    {
+      "id": "Mc-5",
+      "name": "Midea"
+    },
+    {
+      "id": "Mc-6",
+      "name": "EPSON"
+    },
+    {
+      "id": "Mc-7",
+      "name": "Sony"
+    },
+    {
+      "id": "Mc-8",
+      "name": "Compumax"
+    },
+    {
+      "id": "Mc-9",
+      "name": "Kallio"
+    },
+    {
+      "id": "Mc-10",
+      "name": "Collins"
+    },
+    {
+      "id": "Mc-11",
+      "name": "Omega"
+    },
+    {
+      "id": "Mc-12",
+      "name": "HP"
+    },
+    {
+      "id": "Mc-13",
+      "name": "LENOVO"
+    },
+    {
+      "id": "Mc-14",
+      "name": "Acer"
+    },
+    {
+      "id": "Mc-15",
+      "name": "Asus"
+    },
+    {
+      "id": "Mc-16",
+      "name": "Trust"
+    },
+    {
+      "id": "Mc-17",
+      "name": "Decathlon Colombia Sas"
+    }
+  ],
+  "TiposPersonas": [
+    {
+      "id": "TpPs-1",
+      "name": "Natural"
+    },
+    {
+      "id": "TpPs-2",
+      "name": "Juridica"
+    }
+  ],
+  "TipoDeMovimientos": [],
+  "HistorialActivos": [],
+  "Proveedores": [
+    {
+      "id": "Prv-1",
+      "name": "Cencosud Colombia Sa",
+      "email": "sac@tiendasjumbo.co"
+    },
+    {
+      "id": "Prv-2",
+      "name": "Colombiana De Comercio",
+      "email": "soporte.proveedores@colcomercio.com.co"
+    },
+    {
+      "id": "Prv-3",
+      "name": "Colombiana De Comercio",
+      "email": "soporte.proveedores@colcomercio.com.co"
+    },
+    {
+      "id": "Prv-4",
+      "name": "Compumax Computer",
+      "email": "contactanos@compumax.com"
+    },
+    {
+      "id": "Prv-5",
+      "name": "Decathlon Colombia Sas",
+      "email": "dsa.contact@decathlon.com"
+    },
+    {
+      "id": "Prv-6",
+      "name": "Di+Seña Soluciones Arquitectonicas Sas",
+      "email": "disenasolucionesarq@gmail.com"
+    },
+    {
+      "id": "Prv-7",
+      "name": "Simaro Colombia Sas",
+      "email": "info@simaro.co"
+    },
+    {
+      "id": "Prv-8",
+      "name": "Sodimac Colombia Sa",
+      "email": "contactocomercial@homecenter.co"
+    },
+    {
+      "id": "Prv-9",
+      "name": "Tecnomarketink La 33 Sas",
+      "email": "Información no disponible."
+    }
+  ],
+  "Estados": [
+    {
+      "id": "Es-0",
+      "name": "No asignado"
+    },
+    {
+      "id": "Es-1",
+      "name": "Asignado"
+    },
+    {
+      "id": "Es-2",
+      "name": "Dado de baja por daño"
+    },
+    {
+      "id": "Es-3",
+      "name": "En reparacion y/o Garantia"
+    },
+    {
+      "id": "Es-4",
+      "name": "felipe"
+    },
+    {
+      "id": "Es-5",
+      "name": "Frank"
+    },
+    {
+      "id": "Es-6",
+      "name": "felipe"
+    }
+  ],
+  "PersonasTelefonos": [],
+  "asignaciones": [],
+  "TipoActivos": [
+    {
+      "id": "TpAc-1",
+      "name": "Aire Acondicionado"
+    },
+    {
+      "id": "TpAc-2",
+      "name": "Archivador"
+    },
+    {
+      "id": "TpAc-3",
+      "name": "Atril para portatil"
+    },
+    {
+      "id": "TpAc-4",
+      "name": "Biblioteca"
+    },
+    {
+      "id": "TpAc-5",
+      "name": "Bodg50"
+    },
+    {
+      "id": "TpAc-6",
+      "name": "Cajas"
+    },
+    {
+      "id": "TpAc-7",
+      "name": "Camara"
+    },
+    {
+      "id": "TpAc-8",
+      "name": "Computador"
+    },
+    {
+      "id": "TpAc-9",
+      "name": "Centro House"
+    },
+    {
+      "id": "TpAc-10",
+      "name": "CPU"
+    },
+    {
+      "id": "TpAc-11",
+      "name": "Diadema"
+    },
+    {
+      "id": "TpAc-12",
+      "name": "Dispensador de Agua"
+    },
+    {
+      "id": "TpAc-13",
+      "name": "Estructura"
+    },
+    {
+      "id": "TpAc-14",
+      "name": "Espaldares"
+    },
+    {
+      "id": "TpAc-15",
+      "name": "Horno"
+    },
+    {
+      "id": "TpAc-16",
+      "name": "Mesa"
+    },
+    {
+      "id": "TpAc-17",
+      "name": "Impresora"
+    },
+    {
+      "id": "TpAc-18",
+      "name": "Juegos varios"
+    },
+    {
+      "id": "TpAc-19",
+      "name": "Locker"
+    },
+    {
+      "id": "TpAc-20",
+      "name": "Maquinas"
+    },
+    {
+      "id": "TpAc-21",
+      "name": "Mesa Ping Pong"
+    },
+    {
+      "id": "TpAc-22",
+      "name": "Microfono"
+    },
+    {
+      "id": "TpAc-23",
+      "name": "Monitor"
+    },
+    {
+      "id": "TpAc-18",
+      "name": "Mouse"
+    },
+    {
+      "id": "TpAc-19",
+      "name": "Puf"
+    },
+    {
+      "id": "TpAc-20",
+      "name": "Nevera"
+    },
+    {
+      "id": "TpAc-21",
+      "name": "Sala L"
+    },
+    {
+      "id": "TpAc-22",
+      "name": "Silla Ejecutiva"
+    },
+    {
+      "id": "TpAc-23",
+      "name": "Silla Gamer"
+    },
+    {
+      "id": "TpAc-24",
+      "name": "Silla"
+    },
+    {
+      "id": "TpAc-25",
+      "name": "Sofa"
+    },
+    {
+      "id": "TpAc-26",
+      "name": "Teclado"
+    },
+    {
+      "id": "TpAc-27",
+      "name": "Televisor"
+    }
+  ],
+  "Personas": [],
+  "Ubicaciones": [
+    {
+      "id": "ubc-1",
+      "name": "Zona Hunters"
+    },
+    {
+      "id": "ubc-2",
+      "name": "Cafetería"
+    },
+    {
+      "id": "ubc-3",
+      "name": "Coworking"
+    },
+    {
+      "id": "ubc-4",
+      "name": "Salones Campus"
+    },
+    {
+      "id": "ubc-5",
+      "name": "Zona Común ZF"
+    },
+    {
+      "id": "ubc-6",
+      "name": "Sala Azul"
+    },
+    {
+      "id": "ubc-7",
+      "name": "Sala Morada"
+    },
+    {
+      "id": "ubc-8",
+      "name": "Sala Profesores"
+    },
+    {
+      "id": "ubc-9",
+      "name": "Auditorio"
+    },
+    {
+      "id": "ubc-10",
+      "name": "Área Tech"
+    },
+    {
+      "id": "ubc-11",
+      "name": "Salón Inglés"
+    },
+    {
+      "id": "ubc-12",
+      "name": "Salón Apolo"
+    },
+    {
+      "id": "ubc-13",
+      "name": "Salón Artemis"
+    },
+    {
+      "id": "ubc-14",
+      "name": "Salón Sputnik"
+    },
+    {
+      "id": "ubc-15",
+      "name": "Salón Skylab"
+    },
+    {
+      "id": "ubc-16",
+      "name": "Sala de Juntas"
+    },
+    {
+      "id": "ubc-17",
+      "name": "Área Comercial"
+    },
+    {
+      "id": "ubc-20",
+      "name": "Guardado"
+    },
+    {
+      "id": "ubc-21",
+      "name": "Salón Review"
+    },
+    {
+      "id": "ubc-22",
+      "name": "Carlos Rueda Consuegra"
+    },
+    {
+      "id": "ubc-23",
+      "name": "Alejandra Niño Perez"
+    },
+    {
+      "id": "ubc-24",
+      "name": "Silvia Juliana Moreno"
+    },
+    {
+      "id": "ubc-25",
+      "name": "Pedro Gomez Bonilla"
+    },
+    {
+      "id": "ubc-26",
+      "name": "Admon Campus"
+    },
+    {
+      "id": "ubc-27",
+      "name": "Angie Suarez"
+    },
+    {
+      "id": "ubc-28",
+      "name": "Miguel Castro"
+    },
+    {
+      "id": "ubc-29",
+      "name": "Diana Pinzon"
+    },
+    {
+      "id": "ubc-30",
+      "name": "Vanessa Martinez"
+    },
+    {
+      "id": "ubc-31",
+      "name": "Luisa Saavedra"
+    },
+    {
+      "id": "ubc-32",
+      "name": "Juan Carlos Mariño"
+    },
+    {
+      "id": "ubc-33",
+      "name": "Owel Polanco"
+    },
+    {
+      "id": "ubc-34",
+      "name": "Delli Marcela Parra"
+    },
+    {
+      "id": "ubc-35",
+      "name": "Karen Lorena Celis"
+    },
+    {
+      "id": "ubc-36",
+      "name": "Karol Rodriguez"
+    },
+    {
+      "id": "ubc-37",
+      "name": "Jose Tarazona"
+    },
+    {
+      "id": "ubc-38",
+      "name": "Camilo Moreno"
+    },
+    {
+      "id": "ubc-39",
+      "name": "Silvia Moreno"
+    },
+    {
+      "id": "ubc-40",
+      "name": "Leonardo Corredor"
+    },
+    {
+      "id": "ubc-41",
+      "name": "Catalina Carreño"
+    },
+    {
+      "id": "ubc-42",
+      "name": "Sala Asesoria"
+    },
+    {
+      "id": "ubc-43",
+      "name": "Sala Fucsia"
+    },
+    {
+      "id": "ubc-44",
+      "name": "Zona Tech Gerenciales"
+    },
+    {
+      "id": "ubc-53",
+      "name": "Sala Amarilla"
+    },
+    {
+      "id": "ubc-54",
+      "name": "Sala Verde"
+    },
+    {
+      "id": "ubc-57",
+      "name": "Sala de Juntas"
+    },
+    {
+      "id": "ubc-171",
+      "name": "CONEXALAB"
+    },
+    {
+      "id": "ubc-172",
+      "name": "Houston"
+    },
+    {
+      "id": "ubc-173",
+      "name": "CT Cámaras"
+    },
+    {
+      "id": "ubc-174",
+      "name": "Campuslands"
+    },
+    {
+      "id": "ubc-175",
+      "name": "Andres Lizarazo Mendoza"
+    }
+  ],
+  "DetallesMovimientos": [],
+  "Empresas": [
+    {
+      "id": "Emp-1",
+      "name": "Campuslands",
+      "Codigo Transacción": 311,
+      "Categoría ": "Mobiliario ",
+      "Mobiliario ": "Mesas",
+      "Equipos.Cómputo": "Audifonos",
+      "Electrodomésticos ": "Aires Acondicionados ",
+      "Juegos ": "Maquinitas ",
+      "Dispositivos": "Parlantes ",
+      "Otros ": "Luces Led"
+    },
+    {
+      "id": "Emp-2",
+      "name": "Grupo Bien Pensado ",
+      "Codigo Transacción": 324,
+      "Categoría ": "Equipos.Cómputo",
+      "Mobiliario ": "Lockers",
+      "Equipos.Cómputo": "Monitores ",
+      "Electrodomésticos ": "Televisores ",
+      "Juegos ": "Mesa de Ping Pong",
+      "Dispositivos": "Planta de Música",
+      "Otros ": "Luces "
+    },
+    {
+      "id": "Emp-3",
+      "name": "Control de Mercancias ",
+      "Codigo Transacción": 318,
+      "Categoría ": "Electrodomésticos ",
+      "Mobiliario ": "Archivadores",
+      "Equipos.Cómputo": "CPU",
+      "Electrodomésticos ": "Neveras ",
+      "Dispositivos": "Impresoras ",
+      "Otros ": "Caja Fuerte "
+    },
+    {
+      "id": "Emp-4",
+      "name": "Admin Campuslands",
+      "Codigo Transacción": 425,
+      "Categoría ": "Juegos ",
+      "Mobiliario ": "Sillas",
+      "Equipos.Cómputo": "Mouses",
+      "Electrodomésticos ": "Congeladores ",
+      "Dispositivos": "Microfonos ",
+      "Otros ": "Elemento de Metal "
+    }
+  ],
+  "Datos": [
+    {
+      "Codigo Transacción": 327,
+      "Categoría ": "Dispositivos ",
+      "Mobiliario ": "Escritorios",
+      "Equipos.Cómputo": "Teclados ",
+      "Electrodomésticos ": "Dispensadores de Agua ",
+      "Dispositivos": "Camaras ",
+      "Otros ": "Mostradores"
+    },
+    {
+      "Codigo Transacción": 420,
+      "Categoría ": "Otros ",
+      "Mobiliario ": "Cajones de Oficina ",
+      "Electrodomésticos ": "Microondas",
+      "Dispositivos": "Rourter "
+    },
+    {
+      "Codigo Transacción": 111,
+      "Mobiliario ": "Vitrinas"
+    }
+  ]
 }

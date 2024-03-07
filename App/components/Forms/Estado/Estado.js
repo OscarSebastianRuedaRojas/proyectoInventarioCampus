@@ -1,3 +1,5 @@
+import { getProducts } from '../../../../Api/db/db.js';
+import { postProducts } from '../../../../Api/db/db.js';
 export class FormEstado extends HTMLElement {
     constructor() {
         super()
@@ -7,7 +9,7 @@ export class FormEstado extends HTMLElement {
     render() {
         this.innerHTML = /* HTML */ `
         <style rel="stylesheet">
-            @import "./App/components/Forms/Estsado/Estado.css"; 
+            @import "./App/components/Forms/Estado/Estado.css"; 
         </style>
         <div class="formCard"">
                 <div class="formCard-body">
@@ -15,10 +17,8 @@ export class FormEstado extends HTMLElement {
                         <fieldset>
                             <legend style="text-align: center"> Agregar Estado </legend>
                             <fieldset>
-                                <legend> Estado</legend>
                             <div class="form-group">
-                                <label for="estado">Estado:</label>
-                                <input type="text" id="estado" name="estado"
+                                <input type="text" id="estado" name="name"
                                     placeholder="Añadir Estado" required>
                             </div>
                             <button type="submit">Submit</button>
@@ -29,34 +29,15 @@ export class FormEstado extends HTMLElement {
     }
     async postData() {
         const form = document.querySelector('#taskForm')
-        form.addEventListener('submit', (e) => {
-            e.preventDefault()
+        form.addEventListener('submit', async (e) => {
+            const EstadosJSON = await getProducts("/Estados");
+            let data = Object.fromEntries(new FormData(form).entries());
+            data.id = `Es-${(Object.keys(EstadosJSON).length)}`
+            postProducts("/Estados", data)
+            alert("Estado agregado.")
+            e.preventDefault();
             e.stopPropagation();
-            let data = Object.fromEntries(new FormData(form).entries())
-            console.log(data);
-            async function postProducts(endpoint, data) {
-                try {
-                    const response = await fetch(`${URL_API}${endpoint}`,
-                        {
-                            method: "POST",
-                            headers: myHeader,
-                            body: JSON.stringify(data)
-                        }
-                    )
-                    if (!response.ok) {
-                        throw new Error("Error en la petición.")
-                    }
-                    return await response.json()
-                } catch (error) {
-                    console.log(error);
-                    throw error;
-                }
-            }
-            postProducts("http://localhost:3000/Estados", data)
         })
-
-
-
     }
 }
 
