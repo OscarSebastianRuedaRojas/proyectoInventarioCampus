@@ -166,7 +166,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "";
                         break;
                     case 'aE':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<form-estado></form-estado>";
                         break;
                     case 'aTp':
                         mainContent.innerHTML= "";
