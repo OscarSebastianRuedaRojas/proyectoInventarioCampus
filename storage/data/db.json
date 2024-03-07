@@ -13266,210 +13266,210 @@
     "Ubicaciones": [
         {
             "id": "ubc-1",
-            "nombre": "Zona Hunters"
+            "name": "Zona Hunters"
         },
         {
             "id": "ubc-2",
-            "nombre": "Cafetería"
+            "name": "Cafetería"
         },
         {
             "id": "ubc-3",
-            "nombre": "Coworking"
+            "name": "Coworking"
         },
         {
             "id": "ubc-4",
-            "nombre": "Salones Campus"
+            "name": "Salones Campus"
         },
         {
             "id": "ubc-5",
-            "nombre": "Zona Común ZF"
+            "name": "Zona Común ZF"
         },
         {
             "id": "ubc-6",
-            "nombre": "Sala Azul"
+            "name": "Sala Azul"
         },
         {
             "id": "ubc-7",
-            "nombre": "Sala Morada"
+            "name": "Sala Morada"
         },
         {
             "id": "ubc-8",
-            "nombre": "Sala Profesores"
+            "name": "Sala Profesores"
         },
         {
             "id": "ubc-9",
-            "nombre": "Auditorio"
+            "name": "Auditorio"
         },
         {
             "id": "ubc-10",
-            "nombre": "Área Tech"
+            "name": "Área Tech"
         },
         {
             "id": "ubc-11",
-            "nombre": "Salón Inglés"
+            "name": "Salón Inglés"
         },
         {
             "id": "ubc-12",
-            "nombre": "Salón Apolo"
+            "name": "Salón Apolo"
         },
         {
             "id": "ubc-13",
-            "nombre": "Salón Artemis"
+            "name": "Salón Artemis"
         },
         {
             "id": "ubc-14",
-            "nombre": "Salón Sputnik"
+            "name": "Salón Sputnik"
         },
         {
             "id": "ubc-15",
-            "nombre": "Salón Skylab"
+            "name": "Salón Skylab"
         },
         {
             "id": "ubc-16",
-            "nombre": "Sala de Juntas"
+            "name": "Sala de Juntas"
         },
         {
             "id": "ubc-17",
-            "nombre": "Área Comercial"
+            "name": "Área Comercial"
         },
         {
             "id": "ubc-20",
-            "nombre": "Guardado"
+            "name": "Guardado"
         },
         {
             "id": "ubc-21",
-            "nombre": "Salón Review"
+            "name": "Salón Review"
         },
         {
             "id": "ubc-22",
-            "nombre": "Carlos Rueda Consuegra"
+            "name": "Carlos Rueda Consuegra"
         },
         {
             "id": "ubc-23",
-            "nombre": "Alejandra Niño Perez"
+            "name": "Alejandra Niño Perez"
         },
         {
             "id": "ubc-24",
-            "nombre": "Silvia Juliana Moreno"
+            "name": "Silvia Juliana Moreno"
         },
         {
             "id": "ubc-25",
-            "nombre": "Pedro Gomez Bonilla"
+            "name": "Pedro Gomez Bonilla"
         },
         {
             "id": "ubc-26",
-            "nombre": "Admon Campus"
+            "name": "Admon Campus"
         },
         {
             "id": "ubc-27",
-            "nombre": "Angie Suarez"
+            "name": "Angie Suarez"
         },
         {
             "id": "ubc-28",
-            "nombre": "Miguel Castro"
+            "name": "Miguel Castro"
         },
         {
             "id": "ubc-29",
-            "nombre": "Diana Pinzon"
+            "name": "Diana Pinzon"
         },
         {
             "id": "ubc-30",
-            "nombre": "Vanessa Martinez"
+            "name": "Vanessa Martinez"
         },
         {
             "id": "ubc-31",
-            "nombre": "Luisa Saavedra"
+            "name": "Luisa Saavedra"
         },
         {
             "id": "ubc-32",
-            "nombre": "Juan Carlos Mariño"
+            "name": "Juan Carlos Mariño"
         },
         {
             "id": "ubc-33",
-            "nombre": "Owel Polanco"
+            "name": "Owel Polanco"
         },
         {
             "id": "ubc-34",
-            "nombre": "Delli Marcela Parra"
+            "name": "Delli Marcela Parra"
         },
         {
             "id": "ubc-35",
-            "nombre": "Karen Lorena Celis"
+            "name": "Karen Lorena Celis"
         },
         {
             "id": "ubc-36",
-            "nombre": "Karol Rodriguez"
+            "name": "Karol Rodriguez"
         },
         {
             "id": "ubc-37",
-            "nombre": "Jose Tarazona"
+            "name": "Jose Tarazona"
         },
         {
             "id": "ubc-38",
-            "nombre": "Camilo Moreno"
+            "name": "Camilo Moreno"
         },
         {
             "id": "ubc-39",
-            "nombre": "Silvia Moreno"
+            "name": "Silvia Moreno"
         },
         {
             "id": "ubc-40",
-            "nombre": "Leonardo Corredor"
+            "name": "Leonardo Corredor"
         },
         {
             "id": "ubc-41",
-            "nombre": "Catalina Carreño"
+            "name": "Catalina Carreño"
         },
         {
             "id": "ubc-42",
-            "nombre": "Sala Asesoria"
+            "name": "Sala Asesoria"
         },
         {
             "id": "ubc-43",
-            "nombre": "Sala Fucsia"
+            "name": "Sala Fucsia"
         },
         {
             "id": "ubc-44",
-            "nombre": "Zona Tech Gerenciales"
+            "name": "Zona Tech Gerenciales"
         },
         {
             "id": "ubc-53",
-            "nombre": "Sala Amarilla"
+            "name": "Sala Amarilla"
         },
         {
             "id": "ubc-54",
-            "nombre": "Sala Verde"
+            "name": "Sala Verde"
         },
         {
             "id": "ubc-57",
-            "nombre": "Sala de Juntas"
+            "name": "Sala de Juntas"
         },
         {
             "id" : "ubc-171",
-            "nombre" : "CONEXALAB"
+            "name" : "CONEXALAB"
         },
         {
             "id" : "ubc-172",
-            "nombre" : "Houston"
+            "name" : "Houston"
         },
         {
             "id" : "ubc-173",
-            "nombre" : "CT Cámaras"
+            "name" : "CT Cámaras"
         },
         {
             "id" : "ubc-174",
-            "nombre" : "Campuslands"
+            "name" : "Campuslands"
         },
         {
             "id" : "ubc-175",
-            "nombre" : "Andres Lizarazo Mendoza"
+            "name" : "Andres Lizarazo Mendoza"
         }
     ],
     "DetallesMovimientos": [],
     "Empresas": [
         {
             "id": "Emp-1",
-            "nombre": "Campuslands",
+            "name": "Campuslands",
             "Codigo Transacción": 311,
             "Categoría ": "Mobiliario ",
             "Mobiliario ": "Mesas",
@@ -13481,7 +13481,7 @@
         },
         {
             "id": "Emp-2",
-            "nombre": "Grupo Bien Pensado ",
+            "name": "Grupo Bien Pensado ",
             "Codigo Transacción": 324,
             "Categoría ": "Equipos.Cómputo",
             "Mobiliario ": "Lockers",
@@ -13493,7 +13493,7 @@
         },
         {
             "id": "Emp-3",
-            "nombre": "Control de Mercancias ",
+            "name": "Control de Mercancias ",
             "Codigo Transacción": 318,
             "Categoría ": "Electrodomésticos ",
             "Mobiliario ": "Archivadores",
@@ -13504,7 +13504,7 @@
         },
         {
             "id": "Emp-4",
-            "nombre": "Admin Campuslands",
+            "name": "Admin Campuslands",
             "Codigo Transacción": 425,
             "Categoría ": "Juegos ",
             "Mobiliario ": "Sillas",
