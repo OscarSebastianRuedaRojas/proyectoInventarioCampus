@@ -13,7 +13,15 @@ export class Form extends HTMLElement {
                 <div class="formCard-body">
                     <form id="taskForm">
                         <fieldset>
-                            <legend> Agregar </legend>
+                            <legend style="text-align: center"> Agregar Activo </legend>
+                            <fieldset>
+                                <legend> Descripcion</legend>
+                            <div class="form-group">
+                                <label for="descripcion">descripcion:</label>
+                                <input type="text" id="descripcion" name="descripcion"
+                                    placeholder="Añadir descripcion" required>
+                            </div>
+                            </fieldset>
                             <fieldset>
                                 <legend>Marca</legend>
                                 <div class="form-group">
@@ -40,7 +48,7 @@ export class Form extends HTMLElement {
                             <div class="form-group">
                                 <label for="valorUnitario">valorUnitario:</label>
                                 <input type="number" id="valorUnitario" name="valorUnitario"
-                                    placeholder="Add valorUnitario" required>
+                                    placeholder="Añadir valor unitario" required>
                             </div>
                             </fieldset>
                             <fieldset>
