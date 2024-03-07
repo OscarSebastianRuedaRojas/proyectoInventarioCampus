@@ -1,48 +1,67 @@
+/* Estilos generales */
 .formCard {
-    position: absolute;
-    margin: auto ;
-    background: rgba(255, 255, 255, 0.838);
-    width: 18rem;
-    box-shadow: 15px 15px 15px rgb(207, 207, 207);
+    margin: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    margin-top: 2rem;
 }
-.formCard-body{
+
+.formCard-body {
     width: 100%;
     height: 100%;
-
 }
-
-
 
 legend {
     font-weight: bold;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 label {
     font-weight: bold;
+    color: #333;
+    font-weight: 300;
 }
 
 input[type="text"],
 input[type="date"],
 button[type="submit"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px;
+    border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
 }
 
+/* Botón de enviar */
 .formCard button[type="submit"] {
-    background-color: #007bff;
+    background-color: #052c65;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s;
+    border: none;
 }
 
 .formCard button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #e84a40;
+}
+
+/* Estilos de respuesta */
+@media (max-width: 768px) {
+    .formCard {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    button[type="submit"] {
+        width: calc(100% - 20px);
+    }
 }
