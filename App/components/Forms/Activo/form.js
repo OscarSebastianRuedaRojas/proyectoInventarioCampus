@@ -7,7 +7,7 @@ export class Form extends HTMLElement {
     render() {
         this.innerHTML = /* HTML */ `
         <style rel="stylesheet">
-            @import "./App/components/Form/Activo/form.css"; 
+            @import "./App/components/Forms/Activo/form.css"; 
         </style>
         <div class="formCard"">
                 <div class="formCard-body">
