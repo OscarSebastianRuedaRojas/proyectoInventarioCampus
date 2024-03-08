@@ -26,7 +26,7 @@ export class SideBar extends HTMLElement{
                 </a>
             </li>
             <li class="sidebar-item" >
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar">
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar" data-verocultar='["aG"]'>
                     <i class='bx bx-add-to-queue'></i>
                     <span>Agregar</span>
                 </a>
@@ -55,7 +55,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar">
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar" data-verocultar='["eD"]'>
                     <i class='bx bx-edit'></i>
                     <span>Editar</span>
                 </a>
@@ -84,11 +84,11 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar">
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar" data-verocultar='["el"]'>
                     <i class='bx bx-trash-alt' ></i>
                     <span>Eliminar</span>
                 </a>
-                <ul id="eliminar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <ul id="eliminar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" >
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link" data-verocultar='["elA"]'>Activo</a>
                     </li>
@@ -113,7 +113,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar">
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["b"]'>
                     <i class='bx bx-search-alt'></i>
                     <span>Buscar</span>
                 </a>
@@ -163,7 +163,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<form-marca></form-marca>";
                         break;
                     case 'aP':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<form-persona></form-persona>";
                         break;
                     case 'aE':
                         mainContent.innerHTML= "<form-estado></form-estado>";
