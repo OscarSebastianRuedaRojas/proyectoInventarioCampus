@@ -11,7 +11,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "N/A",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-1"
     },
     {
@@ -25,7 +25,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "N/A",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-17"
     },
     {
@@ -39,7 +39,7 @@
       "ProveedoreId": "Prv-1",
       "Serial": "ABC123",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-4"
     },
     {
@@ -53,7 +53,7 @@
       "ProveedoreId": "Prv-3",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-5"
     },
     {
@@ -67,7 +67,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "DEF456",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-3"
     },
     {
@@ -81,7 +81,7 @@
       "ProveedoreId": "Prv-7",
       "Serial": "GHI789",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-9"
     },
     {
@@ -95,7 +95,7 @@
       "ProveedoreId": "Prv-6",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-8"
     },
     {
@@ -109,7 +109,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-1",
+      "EstadoId": null,
       "UbicacioneId": "ubc-12"
     },
     {
@@ -124,7 +124,7 @@
       "ProveedoreId": "Prv-3",
       "Serial": "ABC123",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-2"
     },
     {
@@ -139,7 +139,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-12"
     },
     {
@@ -154,7 +154,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "DEF456",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-6"
     },
     {
@@ -169,7 +169,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "GHI789",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-1"
     },
     {
@@ -184,7 +184,7 @@
       "ProveedoreId": "Prv-7",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-3"
     },
     {
@@ -199,7 +199,7 @@
       "ProveedoreId": "Prv-6",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-5"
     },
     {
@@ -214,7 +214,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "PQR678",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-9"
     },
     {
@@ -229,7 +229,7 @@
       "ProveedoreId": "Prv-8",
       "Serial": "STU901",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-8"
     },
     {
@@ -244,7 +244,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "VWX123",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-15"
     },
     {
@@ -259,7 +259,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "YZA234",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": null,
       "UbicacioneId": "ubc-14"
     }
   ],
@@ -419,14 +419,6 @@
     }
   ],
   "Estados": [
-    {
-      "id": "Es-0",
-      "name": "No asignado"
-    },
-    {
-      "id": "Es-1",
-      "name": "Asignado"
-    },
     {
       "id": "Es-2",
       "name": "Dado de baja por daño"
