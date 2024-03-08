@@ -1,28 +1,39 @@
-import { getProducts } from "../../../Api/db/db";
-import { delProducts } from "../../../Api/db/db";
+import { getProducts } from "../../../Api/db/db.js";
+import { delProducts } from "../../../Api/db/db.js";
 export class Delete extends HTMLElement{
     constructor(){
         super();
-        this.render();
+        this.render("Estados");
     }
     render(eleccion){
-        const elements = getProducts(`/${eleccion}`)
+        const elements = Array.from(getProducts(`/${eleccion}`))
         this.innerHTML = /* HTML */`
+        <style rel="stylesheet">
+            @import "./App/components/Delete/delete.css"; 
+        </style>
         <div class="formCard"">
         <div class="formCard-body">
             <form id="taskForm">
                 
-                
             </form>
+
         </div>
         </div>
         `
-        let taskForm = document.querySelector("#taskForm")
+        let taskForm = this.querySelector("#taskForm")
         elements.forEach(element => {
             taskForm.innerHTML += /*HTML */`
-                ${element.id}
-                ${element.nombre}
-                <input id=${element.id} class="checkbox">
+            <div class="displaySeachResult">
+                <div class="body">
+                    <div class="text">
+                        <h2 id="id">${element.id}</h2>
+                        <h2 id="name"> ${element.nombre}</h2>
+                    </div>
+                    <form id="delete"">
+                        <input type="checkbox" id=${element.id} class="checkbox">
+                    </form>
+                </div>
+            </div> 
         `;
         const inputs = this.querySelectorAll(".checkbox");
         inputs.forEach(input => {
@@ -35,3 +46,5 @@ export class Delete extends HTMLElement{
         });
     }
 }
+
+customElements.define("delete-element", Delete)
