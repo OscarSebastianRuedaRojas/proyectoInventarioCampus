@@ -5,7 +5,7 @@ export class Delete extends HTMLElement{
         super();
         this.render("Estados");
     }
-    render(eleccion){
+    render(eleccion) {
         const elements = Array.from(getProducts(`/${eleccion}`))
         this.innerHTML = /* HTML */`
         <style rel="stylesheet">
@@ -16,7 +16,7 @@ export class Delete extends HTMLElement{
             <form id="taskForm">
                 
             </form>
-
+            <button type="submit" id="eliminarBoton"> Eliminar </button>
         </div>
         </div>
         `
@@ -35,15 +35,20 @@ export class Delete extends HTMLElement{
                 </div>
             </div> 
         `;
-        const inputs = this.querySelectorAll(".checkbox");
-        inputs.forEach(input => {
-            if (input.checked){
-                let idEliminar = input.id;
-                delProducts(`/${eleccion}`, idEliminar)
-            }
-        });
-
-        });
+        
+    delData(eleccion)
+    })};
+    delData(eleccion) {
+        const boton = document.querySelector("#eliminarBoton")
+        boton.addEventListener('submit', (e) => {
+            const inputs = document.querySelectorAll(".checkbox");
+            inputs.forEach(input => {
+                if (input.checked){
+                    let idEliminar = input.id;
+                    delProducts(`/${eleccion}`, idEliminar)
+                }
+            });
+        })
     }
 }
 
