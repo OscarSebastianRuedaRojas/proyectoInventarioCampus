@@ -1,3 +1,4 @@
+import Delete from "../Delete/delete.js";
 export class SideBar extends HTMLElement{
     constructor(){
         super();
@@ -90,25 +91,25 @@ export class SideBar extends HTMLElement{
                 </a>
                 <ul id="eliminar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar" >
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elA"]'>Activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["Activos"]'>Activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elM"]'>Marca</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["Marcas"]    '>Marca</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elP"]'>Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["Personas"]'>Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elE"]'>Estado</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["Estados"]'>Estado</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elTp"]'>Tipo de Persona</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["TiposPersonas"]'>Tipo de Persona</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elTma"]'>Tipo de movimiento de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["TipoDeMovimientos"]'>Tipo de movimiento de activo</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["elTa"]'>Tipo de activo</a>
+                        <a href="#" class="sidebar-link" data-verocultar='["TipoActivos"]'>Tipo de activo</a>
                     </li>
                 </ul>
             </li>
@@ -155,6 +156,9 @@ export class SideBar extends HTMLElement{
                 let data = JSON.parse(e.target.dataset.verocultar);
                 let mainContent = document.querySelector('#mainContent');
                 mainContent.innerHTML= "";
+                let deleteM = new Delete()
+                deleteM.render(data)
+                
                 switch (data[0]){
                     case 'aA':
                         mainContent.innerHTML= "<form-register></form-register>";
@@ -198,26 +202,26 @@ export class SideBar extends HTMLElement{
                     case 'edTa':
                         mainContent.innerHTML= "";
                         break;
-                    case 'elA':
+                    case 'Activos':
+                        mainContent.innerHTML= "";
+                        break;
+                    case 'Marcas':
                         mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'elM':
-                        mainContent.innerHTML= "";
+                    case 'Personas':
+                        mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'elP':
-                        mainContent.innerHTML= "";
+                    case 'Estados':
+                        mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'elE':
-                        mainContent.innerHTML= "";
+                    case 'TiposPersonas':
+                        mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'elTp':
-                        mainContent.innerHTML= "";
+                    case 'TipoDeMovimientos':
+                        mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'elTma':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'elTa':
-                        mainContent.innerHTML= "";
+                    case 'TipoActivos':
+                        mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
                     case 'bA':
                         mainContent.innerHTML= "<form-register></form-register>";

@@ -1,13 +1,17 @@
 import { getProducts } from "../../../Api/db/db.js";
 import { delProducts } from "../../../Api/db/db.js";
-
-export class Delete extends HTMLElement {
+export default class Delete extends HTMLElement {
     constructor() {
         super();
-        this.render("Estados");
+        this.connectedCallback()
     }
 
+    connectedCallback(){
+        let eleccion = event.target.dataset.verocultar
+        this.render(JSON.parse(eleccion)[0]);
+    }
     async render(eleccion) {
+        console.log(eleccion);
         const elements = Array.from(await getProducts(`/${eleccion}`));
         console.log(elements);
         console.log(elements[0]);
