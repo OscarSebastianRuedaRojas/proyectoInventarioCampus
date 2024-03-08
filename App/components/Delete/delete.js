@@ -5,8 +5,13 @@ export class Delete extends HTMLElement{
         super();
         this.render("Estados");
     }
-    render(eleccion){
-        const elements = Array.from(getProducts(`/${eleccion}`))
+    async render(eleccion){
+        const elements = Array.from( await getProducts(`/${eleccion}`))
+        console.log(elements);
+        console.log(elements[0]);
+        elements.forEach(element => {
+            console.log(element.id);
+        });
         this.innerHTML = /* HTML */`
         <style rel="stylesheet">
             @import "./App/components/Delete/delete.css"; 
@@ -20,21 +25,22 @@ export class Delete extends HTMLElement{
         </div>
         </div>
         `
-        let taskForm = this.querySelector("#taskForm")
         elements.forEach(element => {
-            taskForm.innerHTML += /*HTML */`
-            <div class="displaySeachResult">
+            let div = document.createElement('div');
+            div.innerHTML = /*HTML */`
                 <div class="body">
                     <div class="text">
                         <h2 id="id">${element.id}</h2>
-                        <h2 id="name"> ${element.nombre}</h2>
+                        <h2 id="name">${element.name}</h2>
                     </div>
-                    <form id="delete"">
-                        <input type="checkbox" id=${element.id} class="checkbox">
+                    <form id="delete">
+                        <input type="checkbox" id="${element.id}" class="checkbox">
                     </form>
                 </div>
-            </div> 
-        `;
+            `;
+            taskForm.appendChild(div);
+        });
+        
         const inputs = this.querySelectorAll(".checkbox");
         inputs.forEach(input => {
             if (input.checked){
@@ -43,8 +49,7 @@ export class Delete extends HTMLElement{
             }
         });
 
-        });
+        };
     }
-}
 
 customElements.define("delete-element", Delete)
