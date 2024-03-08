@@ -43,6 +43,7 @@ export class Persona extends HTMLElement {
                                 placeholder="Ingrese el email" required>
                         </div>
                     </fieldset>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </div>
