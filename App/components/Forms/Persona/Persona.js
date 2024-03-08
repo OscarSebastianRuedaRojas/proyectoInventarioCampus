@@ -69,7 +69,7 @@ export class Persona extends HTMLElement {
         form.addEventListener('submit', async (e) => {
             const EstadosJSON = await getProducts("/Personas");
             let data = Object.fromEntries(new FormData(form).entries());
-            data.id = `TpPs-${(Object.keys(EstadosJSON).length)+1}`
+            data.id = `Pr-${(Object.keys(EstadosJSON).length)+1}`
             setTimeout(() => postProducts("/Personas", data), 1500)
             e.preventDefault();
             e.stopPropagation();

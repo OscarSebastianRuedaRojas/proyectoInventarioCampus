@@ -16,6 +16,14 @@ export class Form extends HTMLElement {
                         <fieldset>
                             <legend style="text-align: center"> Agregar Activo </legend>
                             <fieldset>
+                            <legend> Nombre del activo</legend>
+                        <div class="form-group">
+                            <label for="descripcion">nombre:</label>
+                            <input type="text" id="nombre" name="nombre"
+                                placeholder="Añadir nombre" required>
+                        </div>
+                        </fieldset>
+                            <fieldset>
                                 <legend> Descripcion</legend>
                             <div class="form-group">
                                 <label for="descripcion">descripcion:</label>

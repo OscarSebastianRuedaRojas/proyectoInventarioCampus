@@ -120,9 +120,12 @@ li {
 
 #sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
     display: block;
-    max-height: 15em;
+    max-height: 20em;
     width: 100%;
     opacity: 1;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(208, 208, 208);
+    transform: translateX(-.5rem);
 }
 
 #sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -150,8 +153,8 @@ li {
     min-width: 200px;
 }
 .avatar {
-    height: 40px;
-    width: 40px;
+    height: 65px;
+    width: 65px;
 }
 
 

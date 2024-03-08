@@ -363,6 +363,10 @@
     {
       "id": "TpPs-2",
       "name": "Juridica"
+    },
+    {
+      "id": "TpPs-3",
+      "name": "Domestico"
     }
   ],
   "TipoDeMovimientos": [],
@@ -568,7 +572,13 @@
       "name": "Televisor"
     }
   ],
-  "Personas": [],
+  "Personas": [
+    {
+      "id": "Pr-1",
+      "name": "Oviel Felipe Mendoza Pineda ",
+      "email": "ovielfelipe77@gmail.com"
+    }
+  ],
   "Ubicaciones": [
     {
       "id": "ubc-1",
