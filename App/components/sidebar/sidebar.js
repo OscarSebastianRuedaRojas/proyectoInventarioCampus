@@ -193,13 +193,13 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<editar-element-marca></editar-element-marca>";
                         break;
                     case 'edP':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<editar-element-persona></editar-element-persona>";
                         break;
                     case 'edE':
                         mainContent.innerHTML= "<editar-element-estado></editar-element-estado>";
                         break;
                     case 'edTp':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<editar-element-persona></editar-element-persona>";
                         break;
                     case 'edTma':
                         mainContent.innerHTML= "<editar-element-movimiento-activo></editar-element-movimiento-activo>";
