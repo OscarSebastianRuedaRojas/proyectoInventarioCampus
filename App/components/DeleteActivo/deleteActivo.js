@@ -35,16 +35,18 @@ export class DeleteActivo extends HTMLElement {
             </div>
         </div>
         `;
-        const taskForm = this.querySelector("#taskForm");
         const tbody = this.querySelector('tbody')
         elements.forEach(element => {
             let tr = document.createElement('tr');
-            tr.innerHTML = /*HTML */`
+            if(element?.EstadoId==="Es-2"){
+                tr.innerHTML = /*HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${element.Descripcion}</td>
                 <td><input type="checkbox" id="${element.id}" class="checkbox"></td>
             `;
             tbody.appendChild(tr);
+            }
+            
         });
         const boton = this.querySelector("#eliminarBoton");
         boton.addEventListener("click", () => {
