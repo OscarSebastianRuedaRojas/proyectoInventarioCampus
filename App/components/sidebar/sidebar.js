@@ -203,7 +203,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "";
                         break;
                     case 'Activos':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<delete-element-activo></delete-element-activo>";
                         break;
                     case 'Marcas':
                         mainContent.innerHTML= "<delete-element></delete-element>";

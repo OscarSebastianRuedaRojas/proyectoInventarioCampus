@@ -4,6 +4,7 @@
       "id": "Ac-1",
       "Codigo Transacción": "",
       "Formulario": 1,
+      "Descripcion": "Aire acondicionado para uso doméstico",
       "MarcaId": "Mc-17",
       "categoryId": "Ctg-1",
       "TipoActivoId": "TpAc-21",
@@ -11,13 +12,14 @@
       "ProveedoreId": "Prv-5",
       "Serial": "N/A",
       "EmpresaId": "Emp-1",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-1"
     },
     {
       "id": "Ac-2",
       "Codigo Transacción": "",
       "Formulario": 2,
+      "Descripcion": "Impresora multifunción para oficina",
       "MarcaId": "Mc-6",
       "categoryId": "Ctg-2",
       "TipoActivoId": "TpAc-23",
@@ -25,13 +27,14 @@
       "ProveedoreId": "Prv-4",
       "Serial": "N/A",
       "EmpresaId": "Emp-4",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-17"
     },
     {
       "id": "Ac-3",
       "Codigo Transacción": "",
       "Formulario": 3,
+      "Descripcion": "Mesa de ping pong plegable para espacios comunes",
       "MarcaId": "Mc-1",
       "categoryId": "Ctg-3",
       "TipoActivoId": "TpAc-4",
@@ -39,13 +42,14 @@
       "ProveedoreId": "Prv-1",
       "Serial": "ABC123",
       "EmpresaId": "Emp-1",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-4"
     },
     {
       "id": "Ac-4",
       "Codigo Transacción": "",
       "Formulario": 4,
+      "Descripcion": "Televisor LED de 55 pulgadas",
       "MarcaId": "Mc-3",
       "categoryId": "Ctg-5",
       "TipoActivoId": "TpAc-17",
@@ -53,13 +57,14 @@
       "ProveedoreId": "Prv-3",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-5"
     },
     {
       "id": "Ac-5",
       "Codigo Transacción": "",
       "Formulario": 5,
+      "Descripcion": "Cámara de seguridad para vigilancia",
       "MarcaId": "Mc-7",
       "categoryId": "Ctg-4",
       "TipoActivoId": "TpAc-22",
@@ -67,13 +72,14 @@
       "ProveedoreId": "Prv-5",
       "Serial": "DEF456",
       "EmpresaId": "Emp-2",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-3"
     },
     {
       "id": "Ac-6",
       "Codigo Transacción": "",
       "Formulario": 6,
+      "Descripcion": "Máquina de ejercicio para sala de fitness",
       "MarcaId": "Mc-11",
       "categoryId": "Ctg-1",
       "TipoActivoId": "TpAc-18",
@@ -81,13 +87,14 @@
       "ProveedoreId": "Prv-7",
       "Serial": "GHI789",
       "EmpresaId": "Emp-1",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-9"
     },
     {
       "id": "Ac-7",
       "Codigo Transacción": "",
       "Formulario": 7,
+      "Descripcion": "Sofá de cuero negro para área de descanso",
       "MarcaId": "Mc-15",
       "categoryId": "Ctg-2",
       "TipoActivoId": "TpAc-25",
@@ -95,13 +102,14 @@
       "ProveedoreId": "Prv-6",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-8"
     },
     {
       "id": "Ac-8",
       "Codigo Transacción": "",
       "Formulario": 8,
+      "Descripcion": "Televisor LED de 55 pulgadas",
       "MarcaId": "Mc-13",
       "categoryId": "Ctg-5",
       "TipoActivoId": "TpAc-19",
@@ -109,7 +117,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -124,7 +132,7 @@
       "ProveedoreId": "Prv-3",
       "Serial": "ABC123",
       "EmpresaId": "Emp-2",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-2"
     },
     {
@@ -139,7 +147,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -154,7 +162,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "DEF456",
       "EmpresaId": "Emp-1",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-6"
     },
     {
@@ -169,7 +177,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "GHI789",
       "EmpresaId": "Emp-2",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-1"
     },
     {
@@ -184,7 +192,7 @@
       "ProveedoreId": "Prv-7",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-3"
     },
     {
@@ -199,7 +207,7 @@
       "ProveedoreId": "Prv-6",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-5"
     },
     {
@@ -214,7 +222,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "PQR678",
       "EmpresaId": "Emp-4",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-9"
     },
     {
@@ -229,7 +237,7 @@
       "ProveedoreId": "Prv-8",
       "Serial": "STU901",
       "EmpresaId": "Emp-1",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-8"
     },
     {
@@ -244,7 +252,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "VWX123",
       "EmpresaId": "Emp-2",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-15"
     },
     {
@@ -259,7 +267,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "YZA234",
       "EmpresaId": "Emp-3",
-      "EstadoId": null,
+      "EstadoId": "Es-0",
       "UbicacioneId": "ubc-14"
     }
   ],
@@ -569,6 +577,11 @@
       "id": "Pr-1",
       "name": "Oviel Felipe Mendoza Pineda ",
       "email": "ovielfelipe77@gmail.com"
+    },
+    {
+      "id": "Pr-2",
+      "name": "CampusLands",
+      "email": "Contacto@campuslands.com"
     }
   ],
   "Ubicaciones": [
