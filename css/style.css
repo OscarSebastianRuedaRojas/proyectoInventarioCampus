@@ -1,11 +1,9 @@
 
 body {
-    font-family: 'Poppins' , sans-serif;
+    font-family: 'Nutmeg-Black', sans-serif;
 }
-/* componente sidebar */
-.mainContent{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+
+.mainContent {
+    min-height: 90vh;
 }
+

@@ -16,7 +16,7 @@ export class SideBar extends HTMLElement{
                 <i class='bx bx-menu'></i>
             </button>
             <div class="sidebar-logo">
-                <a href="#">CodzSword</a>
+                <img src="storage/img/download logo.png" alt="No disp.">
             </div>
         </div>
         <ul class="sidebar-nav">
