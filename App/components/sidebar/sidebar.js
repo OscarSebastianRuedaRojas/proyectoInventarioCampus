@@ -202,7 +202,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "";
                         break;
                     case 'edTma':
-                        mainContent.innerHTML= "";
+                        mainContent.innerHTML= "<editar-element-movimiento-activo></editar-element-movimiento-activo>";
                         break;
                     case 'edTa':
                         mainContent.innerHTML= "";
