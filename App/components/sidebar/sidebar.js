@@ -4,6 +4,7 @@ export class SideBar extends HTMLElement{
         super();
         this.render();
         this.expandSidebar();
+        this.reload()
     }
     render(){
         this.innerHTML = /* html */`
@@ -21,13 +22,13 @@ export class SideBar extends HTMLElement{
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="#" class="sidebar-link"  id="home">
                     <i class='bx bx-home-alt-2'></i>
                     <span>Home</span>
                 </a>
             </li>
             <li class="sidebar-item" >
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar" data-verocultar='["aG"]'>
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar" data-verocultar='["Dn"]'>
                     <i class='bx bx-add-to-queue'></i>
                     <span>Agregar</span>
                 </a>
@@ -56,7 +57,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar" data-verocultar='["eD"]'>
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar" data-verocultar='["Dn"]'>
                     <i class='bx bx-edit'></i>
                     <span>Editar</span>
                 </a>
@@ -85,7 +86,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar" data-verocultar='["el"]'>
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar"data-verocultar='["Dn"]'>
                     <i class='bx bx-trash-alt' ></i>
                     <span>Eliminar</span>
                 </a>
@@ -114,7 +115,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["b"]'>
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["Dn"]'>
                     <i class='bx bx-search-alt'></i>
                     <span>Buscar</span>
                 </a>
@@ -153,12 +154,16 @@ export class SideBar extends HTMLElement{
         `;
         this.querySelectorAll(".sidebar-link").forEach((val)=>{
             val.addEventListener("click", (e)=>{
+                console.log(e.target.dataset.verocultar);
                 let data = JSON.parse(e.target.dataset.verocultar)[0];
                 let mainContent = document.querySelector('#mainContent');
                 mainContent.innerHTML= "";
                 let deleteM = new Delete()
                 deleteM.render(data)
-                
+                if (e.target.dataset.verocultar == '["Dn"]') {
+                    console.log("yes");
+                    mainContent.innerHTML= "<home-content></home-content>";
+                }
                 switch (data){
                     case 'aA':
                         mainContent.innerHTML= "<form-register></form-register>";
@@ -254,6 +259,12 @@ export class SideBar extends HTMLElement{
         const hamburger = document.querySelector('#toggle-btn');
         hamburger.addEventListener('click', () => {
             document.querySelector('#sidebar').classList.toggle('expand')
+        })
+    }
+    reload() {
+        const home = this.querySelector('#home')
+        home.addEventListener('click', (e) => {
+            location.reload()
         })
     }
 }
