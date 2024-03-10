@@ -9,7 +9,7 @@ export class EditarEstado extends HTMLElement {
         const elements = Array.from(await getProducts(`/Estados`));
         this.innerHTML = /* HTML */`
         <style rel="stylesheet">
-            @import "./App/components/editarEstado/editarEstado.css"; 
+            @import "./App/components/Editar/editarEstado/editarEstado.css"; 
         </style>
         <div class="formCard">
             <div class="formCard-body">
@@ -26,14 +26,16 @@ export class EditarEstado extends HTMLElement {
                 <tbody>
 
                 </tbody>
-              </table>
-                <button type="button" id="editarBoton">Editar </button>
-            </div>
+            </table>
+            <button type="button" id="editarBoton">Editar </button>
+        </div>
         </div>
         <dialog>
-        
+
         </dialog>
         `;
+
+        /*Aqui rellena la tabla */
         const tbody = this.querySelector('tbody')
         elements.forEach(element => {
             let tr = document.createElement('tr');
@@ -44,37 +46,46 @@ export class EditarEstado extends HTMLElement {
             `;
             tbody.appendChild(tr);
         });
+
+        /*Logica para el dialog*/
+        const dialog = this.querySelector('dialog')
         const boton = this.querySelector("#editarBoton");
-        const dialog = this.querySelector("dialog")
         boton.addEventListener("click", () => {
-            const inputs = this.querySelectorAll(".checkbox");
-            inputs.forEach(input => {
-                if (input.checked){
-                    let idEditar = input.id;
-                    let ind = datos.findIndex(estado => estado.id === idEditar);
-                    dialog.innerHTML = /* HTML */`
-                    div class="formCard-body">
-                        <form id="taskForm">
-                            <fieldset>
-                                <legend style="text-align: center"> Editar Estado </legend>
-                            <fieldset>
+
+            const checkedCheckbox = this.querySelector(".checkbox:checked");
+            if (!checkedCheckbox) {
+                console.error('No se ha seleccionado ningún estado.');
+                return;
+            }
+            const idEditar = checkedCheckbox.id;
+            const dialog = this.querySelector('dialog');
+            dialog.innerHTML = /* HTML */`
+                <div class="formCard-body">
+                    <form id="taskForm">
+                        <fieldset>
+                            <legend style="text-align: center"> Editar Estado ${idEditar} </legend>
                             <div class="form-group">
-                                <input type="text" id="estado" name="name"
-                                    placeholder="Añadir Estado" required>
+                                <input type="text" id="estado" name="name" placeholder="Nuevo Estado" >
                             </div>
-                            <button type="submit">Submit</button>
-                        </form>
-                    </div>
-                    `
-                    const form = document.querySelector('#taskForm');
-                    form.addEventListener('submit', async (e) => {
-                        let data = Object.fromEntries(new FormData(form).entries());
-                        data.id = idEditar
-                        putProducts("/Estado", idEditar, data)
-                        e.preventDefault();
-                        e.stopPropagation();
-                    })
-                }
+                            <button type="submit">Guardar</button>
+                            <button id="cancel">Cancelar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            `;
+            dialog.setAttribute('open', '')
+            const cancelButton = this.querySelector('#cancel').addEventListener('click', (e) => {
+                e.preventDefault()
+                dialog.close();
+                e.stopImmediatePropagation()
+            })
+            const form = dialog.querySelector('#taskForm');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const data = Object.fromEntries(new FormData(form).entries());
+                data.id = idEditar;
+                await putProducts("/Estados", idEditar, data);
+                dialog.close();
             });
         });
     }

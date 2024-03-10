@@ -428,8 +428,8 @@
   ],
   "Estados": [
     {
-      "id": "Es-2",
-      "name": "Dado de baja por daño"
+      "name": "Dado de baja por daño.",
+      "id": "Es-2"
     },
     {
       "id": "Es-3",
