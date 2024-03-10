@@ -9,7 +9,12 @@
 a {
     text-decoration: none;
 }
-
+.d-flex{
+    margin-top: 1rem;
+}
+.sidebar-logo img{
+    width: 10rem;
+}
 li {
     list-style: none;
 }

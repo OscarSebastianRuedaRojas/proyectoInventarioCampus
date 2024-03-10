@@ -16,7 +16,7 @@ export class SideBar extends HTMLElement{
                 <i class='bx bx-menu'></i>
             </button>
             <div class="sidebar-logo">
-                <a href="#">CodzSword</a>
+                <img src="storage/img/download logo.png" alt="No disp.">
             </div>
         </div>
         <ul class="sidebar-nav">
@@ -153,13 +153,13 @@ export class SideBar extends HTMLElement{
         `;
         this.querySelectorAll(".sidebar-link").forEach((val)=>{
             val.addEventListener("click", (e)=>{
-                let data = JSON.parse(e.target.dataset.verocultar);
+                let data = JSON.parse(e.target.dataset.verocultar)[0];
                 let mainContent = document.querySelector('#mainContent');
                 mainContent.innerHTML= "";
                 let deleteM = new Delete()
                 deleteM.render(data)
                 
-                switch (data[0]){
+                switch (data){
                     case 'aA':
                         mainContent.innerHTML= "<form-register></form-register>";
                         break;

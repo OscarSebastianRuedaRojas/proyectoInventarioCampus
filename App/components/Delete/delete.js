@@ -6,17 +6,17 @@ export default class Delete extends HTMLElement {
         this.connectedCallback()
     }
 
-    connectedCallback(){
+    async connectedCallback(){
         let eleccion = event.target.dataset.verocultar
-        this.render(JSON.parse(eleccion)[0]);
+        await this.render(JSON.parse(eleccion)[0]);
     }
     async render(eleccion) {
-        console.log(eleccion);
+        let texto = eleccion;
+        let title = texto.replace((/([a-z])([A-Z])/g), '$1 $2');
+        let miniTitle = title.toLowerCase()
         const elements = Array.from(await getProducts(`/${eleccion}`));
-        console.log(elements);
-        console.log(elements[0]);
         elements.forEach(element => {
-            console.log(element.id);
+            (element.id);
         });
         this.innerHTML = /* HTML */`
         <style rel="stylesheet">
@@ -24,34 +24,43 @@ export default class Delete extends HTMLElement {
         </style>
         <div class="formCard">
             <div class="formCard-body">
-                <form id="taskForm"></form>
+                <form id="taskForm">
+                <table class="table caption-top">
+                <caption>Lista de ${miniTitle}</caption>
+                <thead>
+                  <tr>  
+                    <th scope="col">Identificador</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Seleccionar</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+           </div>
+                </form>
                 <button type="button" id="eliminarBoton">Eliminar </button>
             </div>
         </div>
         `;
         const taskForm = this.querySelector("#taskForm");
-
+        const tbody = this.querySelector('tbody')
         elements.forEach(element => {
-            let div = document.createElement('div');
-            div.innerHTML = /*HTML */`
-                <div class="body">
-                    <div class="text">
-                        <h2 id="id">${element.id}</h2>
-                        <h2 id="name">${element.name}</h2>
-                    </div>
-                    <form id="delete">
-                        <input type="checkbox" id="${element.id}" class="checkbox">
-                    </form>
-                </div>
+            let tr = document.createElement('tr');
+            tr.innerHTML = /*HTML */`
+                <td id="id">${element.id}</td>
+                <td id="name">${element.name}</td>
+                <td><input type="checkbox" id="${element.id}" class="checkbox"></td>
             `;
-            taskForm.appendChild(div);
+            tbody.appendChild(tr);
         });
 
         const boton = this.querySelector("#eliminarBoton");
         boton.addEventListener("click", () => {
             const inputs = this.querySelectorAll(".checkbox");
             inputs.forEach(input => {
-                console.log(input.id);
+                (input.id);
                 if (input.checked){
                     let idEliminar = input.id;
                     delProducts(`/${eleccion}`, idEliminar);
