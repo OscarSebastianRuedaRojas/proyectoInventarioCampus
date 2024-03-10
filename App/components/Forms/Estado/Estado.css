@@ -3,14 +3,14 @@
 .mainContent{
     align-items: center;
 }
-.formCard {
+/* .formCard {
     margin: auto;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 
-}
+} */
 
 .formCard-body {
     width: 100%;

@@ -6,6 +6,7 @@ export class DeleteActivo extends HTMLElement {
         this.render()
     }
     async render() {
+        const miniTitle = 'Lista de activos'
         const elements = Array.from(await getProducts(`/Activos`));
         elements.forEach(element => {
             console.log(element.id);
@@ -17,28 +18,34 @@ export class DeleteActivo extends HTMLElement {
         <div class="formCard">
             <div class="formCard-body">
                 <form id="taskForm"></form>
+                <table class="table caption-top">
+                <caption>Lista de ${miniTitle}</caption>
+                <thead>
+                  <tr>  
+                    <th scope="col">Identificador</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Seleccionar</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
                 <button type="button" id="eliminarBoton">Eliminar </button>
             </div>
         </div>
         `;
         const taskForm = this.querySelector("#taskForm");
-
+        const tbody = this.querySelector('tbody')
         elements.forEach(element => {
-            let div = document.createElement('div');
-            div.innerHTML = /*HTML */`
-                <div class="body">
-                    <div class="text">
-                        <h2 id="id">${element.id}</h2>
-                        <h2 id="name">${element.Descripcion}</h2>
-                    </div>
-                    <form id="delete">
-                        <input type="checkbox" id="${element.id}" class="checkbox">
-                    </form>
-                </div>
+            let tr = document.createElement('tr');
+            tr.innerHTML = /*HTML */`
+                <td id="id">${element.id}</td>
+                <td id="name">${element.Descripcion}</td>
+                <td><input type="checkbox" id="${element.id}" class="checkbox"></td>
             `;
-            taskForm.appendChild(div);
+            tbody.appendChild(tr);
         });
-
         const boton = this.querySelector("#eliminarBoton");
         boton.addEventListener("click", () => {
             const inputs = this.querySelectorAll(".checkbox");
