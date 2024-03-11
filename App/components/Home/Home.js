@@ -21,24 +21,32 @@
                         <div class="card-text"><h2>Ubicacion</h2></div>
                         <div class="card-button"><button>Asignar Ubicacion a activo</button></div>
                     </div>
-                    <div class="card-item">
-                        <div class="card-icon"><i class='bx bxs-edit-alt'></i></div>
-                        <div class="card-text"><h2>Editar</h2></div>
-                        <div class="card-button"><button>Editar</button></div>
+                    <div class="card-item" id="mantenimiento">
+                        <div class="card-icon"><i class='bx bxs-first-aid'></i></div>
+                        <div class="card-text"><h2>Mantenimiento</h2></div>
+                        <div class="card-button"><button>Mantenimiento de un activo</button></div>
                     </div>
-                    <div class="card-item">
-                        <div class="card-icon"><i class='bx bxs-trash'></i></div>
-                        <div class="card-text"><h2>Eliminar</h2></div>
-                        <div class="card-button"><button>Eliminar</button></div>
+                    <div class="card-item" id="Baja">
+                        <div class="card-icon"><i class='bx bxs-shield-x'></i></div>
+                        <div class="card-text"><h2>Baja</h2></div>
+                        <div class="card-button"><button>Dar de baja un activo</button></div>
                     </div>
                 </div>
             </section>
             `
             let ubicacion = this.querySelector("#ubicacion")
+            let mantenimiento = this.querySelector("#mantenimiento")
+            let baja = this.querySelector("#baja")
             let mainContent = document.querySelector("#mainContent")
             ubicacion.addEventListener("click", ()=>{
                 mainContent.innerHTML = "<editar-ubicacion></editar-ubicacion>"
             })
+            mantenimiento.addEventListener("click", ()=>{
+                mainContent.innerHTML = "<editar-mantenimiento></editar-mantenimiento>"
+            })
+            // baja.addEventListener("click", ()=>{
+            //     mainContent.innerHTML = "<editar-baja></editar-baja>"
+            // })
         }
     }
 
