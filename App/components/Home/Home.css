@@ -2,6 +2,10 @@
 @media screen and (max-width: 768px) {
     .home-page {
         margin-top: 1rem !important;
+        flex-direction: column;
+    }
+    .welcome-text p{
+        width: 18rem;
     }
     
 }
