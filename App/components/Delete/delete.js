@@ -77,7 +77,7 @@ export default class Delete extends HTMLElement {
     async searchData(elements, searchValue) {
         const trId = document.querySelectorAll('tr')
         trId.forEach(i => {
-            if (i.id.toLocaleLowerCase().includes(searchValue)) {
+            if (i.id.toLowerCase().includes(searchValue)) {
                 i.style.display = 'table-row'
             } else {
                 i.style.display = 'none'
