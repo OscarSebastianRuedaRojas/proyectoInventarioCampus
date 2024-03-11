@@ -47,8 +47,9 @@ export class DeleteActivo extends HTMLElement {
             tbody.appendChild(tr);
             }
         });
+        let content= this.querySelector(".formCard-body")
         if (tbody.innerHTML.trim() === '') {
-            tbody.innerHTML = /* HTML */ `
+            content.innerHTML = /* HTML */ `
             <img src="storage/gif/astronauta.gif" class="astronauta" alt="">
             <p>No hay elementos disponibles para eliminar</p>
             `
