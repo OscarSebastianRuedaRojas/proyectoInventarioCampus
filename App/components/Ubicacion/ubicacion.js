@@ -91,7 +91,6 @@ export class EditarUbicacion extends HTMLElement {
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     ind = elements.findIndex(element => element.id === idEditar)
-                    const elements = Object.fromEntries(new FormData(form).entries());
                     elements[ind].ubicacion = form.value;
                     await putProducts("/Activos", idEditar, elements[ind]);
                     dialog.close();
