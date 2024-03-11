@@ -32,7 +32,7 @@ export class EditarMantenimiento extends HTMLElement {
         const tbody = this.querySelector('tbody');
         elements.forEach(element => {
             let tr = document.createElement('tr');
-            if (element.estadoId !== "Es-2" && "Es-3"){
+            if (element.EstadoId !== "Es-2" && "Es-3"){
                 tr.innerHTML = /* HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${element.name}</td>
@@ -62,7 +62,7 @@ export class EditarMantenimiento extends HTMLElement {
                 form.addEventListener('click', async (e) => {
                     e.preventDefault();
                     let ind = elements.findIndex(element => element.id === idEditar)
-                    elements[ind].estadoId = "Es-3";
+                    elements[ind].EstadoId = "Es-3";
                     await putProducts("/Activos", idEditar, elements[ind]);
                     dialog.close();
                 });

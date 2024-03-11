@@ -28,8 +28,8 @@ export class Form extends HTMLElement {
                             <fieldset>
                                 <legend> Descripcion</legend>
                             <div class="form-group">
-                                <label for="descripcion">descripcion:</label>
-                                <input type="text" id="descripcion" name="descripcion"
+                                <label for="Descripcion">Descripcion:</label>
+                                <input type="text" id="Descripcion" name="Descripcion"
                                     placeholder="Añadir descripcion" required>
                             </div>
                             </fieldset>
@@ -127,7 +127,7 @@ export class Form extends HTMLElement {
         form.addEventListener('submit', async (e) => {
             const ActivosJSON = await getProducts("/Activos");
             let data = Object.fromEntries(new FormData(form).entries());
-            data.id = `Ac-${(Object.keys(ActivosJSON).length)}`
+            data.id = `Ac-${(Object.keys(ActivosJSON).length)+1}`
             setTimeout(() => postProducts("/Activos", data), 1500)
             e.preventDefault();
             e.stopPropagation();

@@ -14,8 +14,7 @@
       "Serial": "N/A",
       "EmpresaId": "Emp-1",
       "EstadoId": "Es-0",
-      "UbicacioneId": "ubc-1",
-      "estadoId": "Es-0"
+      "UbicacioneId": "ubc-1"
     },
     {
       "id": "Ac-2",
@@ -290,18 +289,6 @@
       "EmpresaId": "Emp-3",
       "EstadoId": "Es-0",
       "UbicacioneId": "ubc-14"
-    },
-    {
-      "id": "Ac-18",
-      "nombre": "Televisor 55' ",
-      "descripcion": "Televisor 55' LG",
-      "marca": "Mc-3",
-      "categoria": "Ctg-2",
-      "tipoItem": "TpAc-27",
-      "valorUnitario": "3000000",
-      "proveedor": "Prv-9",
-      "numeroSerial": "6127863718623",
-      "empresa": "Emp-1"
     }
   ],
   "categorias": [
