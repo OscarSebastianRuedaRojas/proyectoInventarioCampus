@@ -62,7 +62,7 @@ export class EditarMantenimiento extends HTMLElement {
                 form.addEventListener('click', async (e) => {
                     e.preventDefault();
                     let ind = elements.findIndex(element => element.id === idEditar)
-                    elements[ind].estadoId = "Es-2";
+                    elements[ind].estadoId = "Es-3";
                     await putProducts("/Activos", idEditar, elements[ind]);
                     dialog.close();
                 });
