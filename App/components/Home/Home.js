@@ -36,7 +36,7 @@
             `
             let ubicacion = this.querySelector("#ubicacion")
             let mantenimiento = this.querySelector("#mantenimiento")
-            let baja = this.querySelector("#baja")
+            let baja = this.querySelector("#Baja")
             let mainContent = document.querySelector("#mainContent")
             ubicacion.addEventListener("click", ()=>{
                 mainContent.innerHTML = "<editar-ubicacion></editar-ubicacion>"
@@ -44,9 +44,9 @@
             mantenimiento.addEventListener("click", ()=>{
                 mainContent.innerHTML = "<editar-mantenimiento></editar-mantenimiento>"
             })
-            // baja.addEventListener("click", ()=>{
-            //     mainContent.innerHTML = "<editar-baja></editar-baja>"
-            // })
+            baja.addEventListener("click", ()=>{
+                mainContent.innerHTML = "<editar-bajas></editar-bajas>"
+            })
         }
     }
 

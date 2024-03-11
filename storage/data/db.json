@@ -256,7 +256,8 @@
       "Serial": "STU901",
       "EmpresaId": "Emp-1",
       "EstadoId": "Es-0",
-      "UbicacioneId": "ubc-8"
+      "UbicacioneId": "ubc-8",
+      "estadoId": "Es-2"
     },
     {
       "id": "Ac-17",
