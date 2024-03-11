@@ -216,8 +216,11 @@ export class SideBar extends HTMLElement{
     }
     expandSidebar() {
         const hamburger = document.querySelector('#toggle-btn');
+        const mainContent = document.querySelector('.mainContent')
+        // const
         hamburger.addEventListener('click', () => {
             document.querySelector('#sidebar').classList.toggle('expand')
+            mainContent.classList.toggle('expand')
         })
     }
     reload() {

@@ -8,6 +8,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.35s ease-in-out;
+}
+
+.mainContent.expand{
+    transform: translateX(30rem);
+    transition: all 0.35s ease-in-out;
 }
 
 .formCard {
@@ -17,5 +23,6 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     margin-top: 2rem;
-    width: clamp(12rem, 60vw, 30rem);
+    width: clamp(25rem, 40vw, 28rem);
+    transform: scale(0.5) translateY(-26rem);
 }
