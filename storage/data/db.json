@@ -14,7 +14,8 @@
       "Serial": "N/A",
       "EmpresaId": "Emp-1",
       "EstadoId": "Es-0",
-      "UbicacioneId": "ubc-1"
+      "UbicacioneId": "ubc-1",
+      "estadoId": "Es-0"
     },
     {
       "id": "Ac-2",
@@ -94,7 +95,8 @@
       "Serial": "GHI789",
       "EmpresaId": "Emp-1",
       "EstadoId": "Es-0",
-      "UbicacioneId": "ubc-9"
+      "UbicacioneId": "ubc-9",
+      "estadoId": "Es-2"
     },
     {
       "id": "Ac-7",
