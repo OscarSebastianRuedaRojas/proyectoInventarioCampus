@@ -1,66 +1,62 @@
-import { getProducts } from "../../../../Api/db/db.js";
-import { putProducts } from "../../../../Api/db/db.js";
+import { getProducts, putProducts } from "../../../../Api/db/db.js";
+
 export class EditarActivos extends HTMLElement {
     constructor() {
         super();
-        this.render()
+        this.render();
     }
+
     async render() {
         const elements = Array.from(await getProducts(`/Activos`));
-        this.innerHTML = /* HTML */`
-        <style rel="stylesheet">
-            @import "./App/components/Editar/editarActivo/editarActivo.css"; 
-        </style>
-        <div class="formCard">
-            <div class="formCard-body">
-                <form id="taskForm"></form>
-                <table class="table caption-top">
-                <caption>Lista de Activos</caption>
-                <thead>
-                  <tr>  
-                    <th scope="col">Identificador</th>
-                    <th scope="col">Descripcion</th>
-                    <th scope="col">Seleccionar</th>
-                  </tr>
-                </thead>
-                <tbody>
 
-                </tbody>
-            </table>
-        </div>
-        </div>
-        <dialog>
-
-        </dialog>
+        this.innerHTML = `
+            <style rel="stylesheet">
+                @import "./App/components/Editar/editarActivo/editarActivo.css"; 
+            </style>
+            <div class="formCard">
+                <div class="formCard-body">
+                    <form id="taskForm"></form>
+                    <table class="table caption-top">
+                        <caption>Lista de Activos</caption>
+                        <thead>
+                            <tr>  
+                                <th scope="col">Identificador</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Seleccionar</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <dialog></dialog>
         `;
 
-        /*Aqui rellena la tabla */
-        const tbody = this.querySelector('tbody')
+        const tbody = this.querySelector('tbody');
         elements.forEach(element => {
             let tr = document.createElement('tr');
-            tr.innerHTML = /*HTML */`
+            tr.innerHTML = `
                 <td id="id">${element.id}</td>
                 <td id="name">${element.name}</td>
-                <td><button type="button" id="${element.id}" class="editarBoton">Editar </button></td>
+                <td><button type="button" id="${element.id}" class="editarBoton">Editar</button></td>
             `;
             tbody.appendChild(tr);
         });
 
-        /*Logica para el dialog*/
         const botones = this.querySelectorAll(".editarBoton");
         botones.forEach(boton => {
             boton.addEventListener("click", () => {
                 const idEditar = boton.id;
                 const dialog = this.querySelector('dialog');
-                dialog.innerHTML = /* HTML */`
+                dialog.innerHTML = `
                 <style rel="stylesheet">
                 @import "./App/components/Forms/Activo/form.css"; 
             </style>
-            <div class="formCard">
+            <div class="formCard"">
                     <div class="formCard-body">
                         <form id="taskForm">
                             <fieldset>
-                                <legend style="text-align: center"> Editar Activo </legend>
+                                <legend style="text-align: center"> Agregar Activo </legend>
                                 <fieldset>
                                 <legend> Nombre del activo</legend>
                             <div class="form-group">
@@ -133,36 +129,51 @@ export class EditarActivos extends HTMLElement {
                     </div>
                 </div>
                 <custom-alert></custom-alert>
-            `
-            let getAndShowData = () => {
-                function populateSelect(data, id) {
-                    const select = document.querySelector(id)
-                    data.forEach(item => {
-                        const option = document.createElement('option')
-                        option.value = item.id;
-                        option.textContent = item.name
-                        select.appendChild(option)
-                    });
-                }
-                const dataMarcas = Array.from(getProducts("/Marcas"));
-                const dataCat = Array.from(getProducts("/categorias"));
-                const dataTipo = Array.from(getProducts("/TipoActivos"));
-                const dataProv = Array.from(getProducts("/Proveedores"));
-                const dataEmpresa = Array.from(getProducts("/Empresas"));
-        
-                populateSelect(dataMarcas, "#marcaSelect");
-                populateSelect(dataCat, "#categoriaSelect");
-                populateSelect(dataTipo, "#tipoItemSelect");
-                populateSelect(dataProv, "#proveedorSelect");
-                populateSelect(dataEmpresa, "#empresaSelect")
-            }
-            getAndShowData()
-                dialog.setAttribute('open', '')
-                const cancelButton = this.querySelector('#cancel').addEventListener('click', (e) => {
-                    e.preventDefault()
-                    dialog.close();
-                    e.stopImmediatePropagation()
-                })
+                `;
+
+                const getAndShowData = async () => {
+                    function populateSelect(data, id) {
+                        const select = document.querySelector(id)
+                        data.forEach(item => {
+                            const option = document.createElement('option')
+                            option.value = item.id;
+                            option.textContent = item.name
+                            select.appendChild(option)
+                        });
+                    };
+
+                    const responseMarcas = await fetch("http://localhost:3000/Marcas");
+                    const responseCategorias = await fetch("http://localhost:3000/categorias");
+                    const responseTipo = await fetch("http://localhost:3000/TipoActivos");
+                    const responseProveedor = await fetch("http://localhost:3000/Proveedores");
+                    const responseEmpresa = await fetch("http://localhost:3000/Empresas");
+
+                    const dataMarcas = await responseMarcas.json();
+                    const dataCat = await responseCategorias.json();
+                    const dataTipo = await responseTipo.json();
+                    const dataProv = await responseProveedor.json();
+                    const dataEmpresa = await responseEmpresa.json();
+
+                    populateSelect(dataMarcas, "#marcaSelect");
+                    populateSelect(dataCat, "#categoriaSelect");
+                    populateSelect(dataTipo, "#tipoItemSelect");
+                    populateSelect(dataProv, "#proveedorSelect");
+                    populateSelect(dataEmpresa, "#empresaSelect");
+
+                };
+                getAndShowData()
+                    .then(
+                        
+                    )
+                dialog.setAttribute('open', '');
+
+                // const cancelButton = this.querySelector('#cancel');
+                // cancelButton.addEventListener('click', (e) => {
+                //     e.preventDefault();
+                //     dialog.close();
+                //     e.stopImmediatePropagation();
+                // });
+
                 const form = dialog.querySelector('#taskForm');
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
@@ -173,7 +184,6 @@ export class EditarActivos extends HTMLElement {
                 });
             });
         });
-        
     }
 }
 
