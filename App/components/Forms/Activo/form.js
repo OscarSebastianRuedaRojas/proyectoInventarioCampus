@@ -1,9 +1,11 @@
-import { postProducts } from '../../../../Api/db/db.js';
+import { postProducts,getProducts } from '../../../../Api/db/db.js';
+
 export class Form extends HTMLElement {
     constructor() {
         super()
         this.render()
         this.getAndShowData() 
+        this.postData()
     }
     render() {
         this.innerHTML = /* HTML */ `
@@ -119,6 +121,17 @@ export class Form extends HTMLElement {
 
 
 
+    }
+    async postData() {
+        const form = document.querySelector('#taskForm')
+        form.addEventListener('submit', async (e) => {
+            const ActivosJSON = await getProducts("/Activos");
+            let data = Object.fromEntries(new FormData(form).entries());
+            data.id = `Ac-${(Object.keys(ActivosJSON).length)}`
+            setTimeout(() => postProducts("/Activos", data), 1500)
+            e.preventDefault();
+            e.stopPropagation();
+        })
     }
 }
 
