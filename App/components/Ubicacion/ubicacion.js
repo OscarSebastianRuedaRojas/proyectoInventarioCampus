@@ -1,11 +1,9 @@
 import { getProducts, putProducts } from "../../../../Api/db/db.js";
-
 export class EditarUbicacion extends HTMLElement {
     constructor() {
         super();
         this.render();
     }
-
     async render() {
         const elements = Array.from(await getProducts(`/Activos`));
 
@@ -17,7 +15,7 @@ export class EditarUbicacion extends HTMLElement {
                 <div class="formCard-body">
                     <form id="taskForm"></form>
                     <table class="table caption-top">
-                        <caption>Lista de Activos</caption>
+                        <caption>Inventario de Activos sin Asignación de Ubicación Predefinida</caption>
                         <thead>
                             <tr>  
                                 <th scope="col">Identificador</th>
@@ -34,11 +32,11 @@ export class EditarUbicacion extends HTMLElement {
         const tbody = this.querySelector('tbody');
         elements.forEach(element => {
             let tr = document.createElement('tr');
-            if (!('ubicacion' in element)){
+            if (!('UbicacioneId' in element)){
                 tr.innerHTML = /* HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${element.name}</td>
-                <td><button type="button" id="${element.id}" class="agregarBoton">agregar</button></td>
+                <td><button type="button" id="${element.id}" class="agregarBoton">Asignar ubicacion</button></td>
             `;
             tbody.appendChild(tr);
             }
@@ -80,18 +78,18 @@ export class EditarUbicacion extends HTMLElement {
                 getAndShowData()
                 dialog.setAttribute('open', '');
 
-                // const cancelButton = this.querySelector('#cancel');
-                // cancelButton.addEventListener('click', (e) => {
-                //     e.preventDefault();
-                //     dialog.close();
-                //     e.stopImmediatePropagation();
-                // });
+                const cancelButton = this.querySelector('#cancel');
+                cancelButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    dialog.close();
+                    e.stopImmediatePropagation();
+                });
 
                 const form = dialog.querySelector('#ubicacionSelect');
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     ind = elements.findIndex(element => element.id === idEditar)
-                    elements[ind].ubicacion = form.value;
+                    elements[ind].UbicacioneId = form.value;
                     await putProducts("/Activos", idEditar, elements[ind]);
                     dialog.close();
                 });
@@ -100,4 +98,4 @@ export class EditarUbicacion extends HTMLElement {
     }
 }
 
-customElements.define("editar-element-activo", EditarUbicacion);
+customElements.define("editar-ubicacion", EditarUbicacion);

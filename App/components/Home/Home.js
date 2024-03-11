@@ -16,10 +16,10 @@
                     <p>Administra fácilmente tus recursos con nuestra intuitiva plataforma. Agrega, edita y elimina elementos en cuestión de segundos, optimizando tus procesos de gestión.</p>
                 </div>
                 <div class="card-container">
-                    <div class="card-item">
-                        <div class="card-icon"><i class='bx bx-add-to-queue'></i></div>
-                        <div class="card-text"><h2>Agregar</h2></div>
-                        <div class="card-button"><button>Agregar</button></div>
+                    <div class="card-item" id="ubicacion">
+                        <div class="card-icon"><i class='bx bxs-edit-location'></i></div>
+                        <div class="card-text"><h2>Ubicacion</h2></div>
+                        <div class="card-button"><button>Asignar Ubicacion a activo</button></div>
                     </div>
                     <div class="card-item">
                         <div class="card-icon"><i class='bx bxs-edit-alt'></i></div>
@@ -34,6 +34,11 @@
                 </div>
             </section>
             `
+            let ubicacion = this.querySelector("#ubicacion")
+            let mainContent = document.querySelector("#mainContent")
+            ubicacion.addEventListener("click", ()=>{
+                mainContent.innerHTML = "<editar-ubicacion></editar-ubicacion>"
+            })
         }
     }
 
