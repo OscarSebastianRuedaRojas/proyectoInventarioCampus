@@ -100,11 +100,11 @@ export class Form extends HTMLElement {
                 select.appendChild(option)
             });
         }
-        const dataMarcas = await getProducts("/Marcas");
-        const dataCat = await getProducts("/categorias");
-        const dataTipo = await getProducts("/TipoActivos");
-        const dataProv = await getProducts("/Proveedores");
-        const dataEmpresa = await getProducts("/Empresas");
+        const dataMarcas = await Array.from(getProducts("/Marcas"));
+        const dataCat = await Array.from(getProducts("/categorias"));
+        const dataTipo = await Array.from(getProducts("/TipoActivos"));
+        const dataProv = await Array.from(getProducts("/Proveedores"));
+        const dataEmpresa = await Array.from(getProducts("/Empresas"));
 
         populateSelect(dataMarcas, "#marcaSelect");
         populateSelect(dataCat, "#categoriaSelect");

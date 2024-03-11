@@ -144,11 +144,11 @@ export class EditarActivos extends HTMLElement {
                         select.appendChild(option)
                     });
                 }
-                const dataMarcas = getProducts("/Marcas");
-                const dataCat = getProducts("/categorias");
-                const dataTipo = getProducts("/TipoActivos");
-                const dataProv = getProducts("/Proveedores");
-                const dataEmpresa = getProducts("/Empresas");
+                const dataMarcas = Array.from(getProducts("/Marcas"));
+                const dataCat = Array.from(getProducts("/categorias"));
+                const dataTipo = Array.from(getProducts("/TipoActivos"));
+                const dataProv = Array.from(getProducts("/Proveedores"));
+                const dataEmpresa = Array.from(getProducts("/Empresas"));
         
                 populateSelect(dataMarcas, "#marcaSelect");
                 populateSelect(dataCat, "#categoriaSelect");
