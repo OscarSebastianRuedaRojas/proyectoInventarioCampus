@@ -4,9 +4,10 @@ export default class Delete extends HTMLElement {
     constructor() {
         super();
         this.connectedCallback()
+        this.searchData()
     }
 
-    async connectedCallback(){
+    async connectedCallback() {
         let eleccion = event.target.dataset.verocultar
         await this.render(JSON.parse(eleccion)[0]);
     }
@@ -26,7 +27,7 @@ export default class Delete extends HTMLElement {
             <div class="formCard-body">
                 <form id="taskForm">
                 <table class="table caption-top">
-                <caption>Lista de ${miniTitle}</caption>
+                <caption>Lista de ${miniTitle} &nbsp;<input type="text" placeholder="Buscar ${miniTitle}" id="inputSearch"></caption>
                 <thead>
                   <tr>  
                     <th scope="col">Identificador</th>
@@ -48,6 +49,7 @@ export default class Delete extends HTMLElement {
         const tbody = this.querySelector('tbody')
         elements.forEach(element => {
             let tr = document.createElement('tr');
+            tr.setAttribute('id', `${element.name}`)
             tr.innerHTML = /*HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${element.name}</td>
@@ -61,12 +63,26 @@ export default class Delete extends HTMLElement {
             const inputs = this.querySelectorAll(".checkbox");
             inputs.forEach(input => {
                 (input.id);
-                if (input.checked){
+                if (input.checked) {
                     let idEliminar = input.id;
                     delProducts(`/${eleccion}`, idEliminar);
                 }
             });
         });
+        const inputSearch = document.querySelector('#inputSearch')
+        inputSearch.addEventListener('input', (e) => {
+            this.searchData(elements, inputSearch.value)
+        })
+    }
+    async searchData(elements, searchValue) {
+        const trId = document.querySelectorAll('tr')
+        trId.forEach(i => {
+            if (i.id.toLowerCase().includes(searchValue)) {
+                i.style.display = 'table-row'
+            } else {
+                i.style.display = 'none'
+            }
+        })
     }
 }
 
