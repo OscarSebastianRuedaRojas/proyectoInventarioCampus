@@ -48,7 +48,7 @@ export class EditarActivos extends HTMLElement {
             boton.addEventListener("click", () => {
                 const idEditar = boton.id;
                 const dialog = this.querySelector('dialog');
-                dialog.innerHTML = `
+                dialog.innerHTML = /* HTML */`
                 <style rel="stylesheet">
                 @import "./App/components/Forms/Activo/form.css"; 
             </style>
@@ -162,9 +162,6 @@ export class EditarActivos extends HTMLElement {
 
                 };
                 getAndShowData()
-                    .then(
-                        
-                    )
                 dialog.setAttribute('open', '');
 
                 // const cancelButton = this.querySelector('#cancel');

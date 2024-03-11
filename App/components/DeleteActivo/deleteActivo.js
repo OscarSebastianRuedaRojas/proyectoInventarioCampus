@@ -46,8 +46,14 @@ export class DeleteActivo extends HTMLElement {
             `;
             tbody.appendChild(tr);
             }
-            
         });
+        if (tbody.innerHTML.trim() === '') {
+            tbody.innerHTML = /* HTML */ `
+            <img src="storage/gif/astronauta.gif" class="astronauta" alt="">
+            <p>No hay elementos disponibles para eliminar</p>
+            `
+            console.log('El elemento está vacío.');
+        }
         const boton = this.querySelector("#eliminarBoton");
         boton.addEventListener("click", () => {
             const inputs = this.querySelectorAll(".checkbox");
