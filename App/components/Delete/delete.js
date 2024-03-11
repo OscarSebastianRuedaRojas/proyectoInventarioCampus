@@ -27,7 +27,7 @@ export default class Delete extends HTMLElement {
             <div class="formCard-body">
                 <form id="taskForm">
                 <table class="table caption-top">
-                <caption>Lista de ${miniTitle} &nbsp;<input type="text" placeholder="Buscar ${miniTitle} " id="inputSearch"></caption>
+                <caption>Lista de ${miniTitle} &nbsp;<input type="text" placeholder="Buscar ${miniTitle}" id="inputSearch"></caption>
                 <thead>
                   <tr>  
                     <th scope="col">Identificador</th>
