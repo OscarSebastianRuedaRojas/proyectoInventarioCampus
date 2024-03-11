@@ -115,33 +115,10 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["Dn"]'>
+                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["Buscar"]'>
                     <i class='bx bx-search-alt'></i>
                     <span>Buscar</span>
                 </a>
-                <ul id="buscar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bA"]'>Activo</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bM"]'>Marca</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bP"]'>Persona</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bE"]'>Estado</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bTp"]'>Tipo de Persona</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bTma"]'>Tipo de movimiento de activo</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link" data-verocultar='["bTa"]'>Tipo de activo</a>
-                    </li>
-                </ul>
             </li>
         </ul>
         <div class="sidebar-footer">
@@ -228,26 +205,8 @@ export class SideBar extends HTMLElement{
                     case 'TipoActivos':
                         mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
-                    case 'bA':
-                        mainContent.innerHTML= "<form-register></form-register>";
-                        break;
-                    case 'bM':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'bP':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'bE':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'bTp':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'bTma':
-                        mainContent.innerHTML= "";
-                        break;
-                    case 'bTa':
-                        mainContent.innerHTML= "";
+                    case 'Buscar':
+                        mainContent.innerHTML= "<search-asset></search-asset>";
                         break;
                 }
                 e.stopImmediatePropagation();
