@@ -16,7 +16,7 @@ export class EditarActivos extends HTMLElement {
             <div class="formCard">
                 <div class="formCard-body">
                     <form id="taskForm"></form>
-                    <table class="table caption-top">
+                    <table class="table table-hover caption-top">
                         <caption>Lista de Activos</caption>
                         <thead>
                             <tr>  
