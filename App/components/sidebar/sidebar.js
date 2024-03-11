@@ -28,7 +28,7 @@ export class SideBar extends HTMLElement{
                 </a>
             </li>
             <li class="sidebar-item" >
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar" data-verocultar='["Dn"]'>
+                <a  class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#agregar" aria-expanded="false" aria-controls="agregar" >
                     <i class='bx bx-add-to-queue'></i>
                     <span>Agregar</span>
                 </a>
@@ -57,7 +57,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar" data-verocultar='["Dn"]'>
+                <a  class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#editar" aria-expanded="false" aria-controls="editar" >
                     <i class='bx bx-edit'></i>
                     <span>Editar</span>
                 </a>
@@ -86,7 +86,7 @@ export class SideBar extends HTMLElement{
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar"data-verocultar='["Dn"]'>
+                <a  class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#eliminar" aria-expanded="false" aria-controls="eliminar"'>
                     <i class='bx bx-trash-alt' ></i>
                     <span>Eliminar</span>
                 </a>
@@ -116,7 +116,7 @@ export class SideBar extends HTMLElement{
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#buscar" aria-expanded="false" aria-controls="buscar" data-verocultar='["Buscar"]'>
-                    <i class='bx bx-search-alt'></i>
+                    <i class='bx bx-search-alt' href="#" data-verocultar='["Buscar"]'></i>
                     <span>Buscar</span>
                 </a>
             </li>
