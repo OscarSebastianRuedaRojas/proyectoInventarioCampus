@@ -1,4 +1,5 @@
 import { postProducts } from '../../../../Api/db/db.js';
+import { getProducts } from '../../../../Api/db/db.js';
 export class Form extends HTMLElement {
     constructor() {
         super()
@@ -99,26 +100,17 @@ export class Form extends HTMLElement {
                 select.appendChild(option)
             });
         }
-        const responseMarcas = await fetch("http://localhost:3000/Marcas");
-        const responseCategorias = await fetch("http://localhost:3000/categorias");
-        const responseTipo = await fetch("http://localhost:3000/TipoActivos");
-        const responseProveedor = await fetch("http://localhost:3000/Proveedores");
-        const responseEmpresa = await fetch("http://localhost:3000/Empresas");
-
-        const dataMarcas = await responseMarcas.json();
-        const dataCat = await responseCategorias.json();
-        const dataTipo = await responseTipo.json();
-        const dataProv = await responseProveedor.json();
-        const dataEmpresa = await responseEmpresa.json();
+        const dataMarcas = await getProducts("/Marcas");
+        const dataCat = await getProducts("/categorias");
+        const dataTipo = await getProducts("/TipoActivos");
+        const dataProv = await getProducts("/Proveedores");
+        const dataEmpresa = await getProducts("/Empresas");
 
         populateSelect(dataMarcas, "#marcaSelect");
         populateSelect(dataCat, "#categoriaSelect");
         populateSelect(dataTipo, "#tipoItemSelect");
         populateSelect(dataProv, "#proveedorSelect");
-        populateSelect(dataEmpresa, "#empresaSelect");
-
-
-
+        populateSelect(dataEmpresa, "#empresaSelect")
     }
 }
 
