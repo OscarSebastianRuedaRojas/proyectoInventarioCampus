@@ -1,77 +1,169 @@
-
-.search-card{
+.search-card {
     background: rgb(244, 244, 244);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-radius: 10px ;
-    padding: 1rem;
-    gap: 1rem;
-    transform: scale(2);
+    border-radius: 10px;
+    padding: 2rem;
+    gap: 1.5rem;
+    transform: scale(1);
+    max-width: 40rem;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.search-result{
+
+.search-result {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    place-content: center;
-
+    gap: 1rem;
+    padding: 1rem; 
+    overflow-x: auto; 
 }
-.search-card .results{
-    width: 100%;
 
+.search-result::-webkit-scrollbar {
+    width: 8px;
 }
-.search-card fieldset legend{
+
+.search-result::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px;
+}
+
+.search-result::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.search-card .results {
+    overflow-y: auto;
+    max-height: 8rem; 
+    padding: 1rem; 
+}
+
+.search-card fieldset legend {
     text-align: center;
 }
+
 #getAsset {
     display: flex;
     justify-content: space-around;
-    align-items:  center ;
-    gap: .5rem;
+    align-items: center;
+    gap: 1rem;
 }
+
 #getAsset button {
     border: 1px solid green;
     color: green;
     transition-duration: 400ms;
-    width: 30% !important;
+    width: 30%;
+    padding: 0.5rem;
 }
 
 #getAsset button:hover {
     transform: scale(1.1);
-    transition-duration: 400ms;
     background-color: rgb(3, 169, 3);
     color: #f4f4f4;
 }
+
 .search-result input {
     width: 70%;
+    padding: 0.5rem;
 }
-.search-result p{
+
+.search-result p {
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 100;
     color: #5c5c5c;
-
+    padding: 0.5rem;
 }
-.search-result button{
+
+.search-result button {
     border: 1px solid orange;
     transition-duration: 400ms;
+    padding: 0.5rem;
 }
-.search-result button .bx{
+
+.search-result button .bx {
     color: orange;
 }
-.search-result button:hover{
+
+.search-result button:hover {
     background-color: orange;
     transform: scale(1.1);
     transition-duration: 400ms;
 }
+
 .search-result button:hover .bx {
     color: #f4f4f4;
 }
-#details{
+
+.details {
     display: flex;
     align-items: center;
-    justify-content: center ;
-    width: 100%;
-    height: 100%;
+    justify-content: center;
+    width: 7rem;
+    height: 2rem;
+    align-self: center;
+}
+
+
+/* ASSET VIEW STYLE*/
+
+/* Estilos para el contenedor del activo */
+.asset {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: 20px;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+/* Estilos para el cuerpo del activo */
+.asset-body {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos para las leyendas */
+.asset legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos para los títulos */
+.asset h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Estilos para los botones */
+.asset button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.asset button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los botones de cierre */
+.asset button.close {
+    margin-top: 20px;
+    background-color: #dc3545;
+}
+
+.asset button.close:hover {
+    background-color: #c82333;
 }

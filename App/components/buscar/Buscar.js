@@ -5,6 +5,7 @@ export class Buscar extends HTMLElement {
         super()
         this.render()
         this.searchAssets()
+        this.showAssetInfo()
     }
     async render() {
         const assets = Array.from(await getProducts(`/Activos`));
@@ -37,33 +38,113 @@ export class Buscar extends HTMLElement {
             e.preventDefault()
             const assetDescription = searchDescription.value; 
             assets.forEach((asset) => {
-                if (asset.Descripcion.toLowerCase().includes(assetDescription)) {
+                if (asset.Descripcion.toLowerCase().includes(assetDescription.toLowerCase())) {
                         let searchResult = document.createElement('div')
                         searchResult.setAttribute('class', 'search-result')
                         searchResult.innerHTML = /*html */ `
                         <p>${asset.id}</p>
                         <p>${asset.name}</p> 
                         <p>${asset.EstadoId}</p>
-                        <button type="button" id="details"><i class='bx bx-info-circle'></i></button>
+                        <button type="button" class="details" id="${asset.id}"><i class='bx bx-info-circle'></i></button>
                         `
                         results.appendChild(searchResult)
                     }
                 })
-            
-        });
-        function search(heroes) {
-            const searchInput = document.querySelector('#search');
-            const filter = searchInput.value.toLowerCase();
-            const card = document.querySelectorAll('.card')
-            card.forEach(card => {
-                if (card.id.toLowerCase().includes(filter)) {
-                    card.style.display = ''
-                }
-                else {
-                    card.style.display = 'none';
-                }
+            const botonesInfo = this.querySelectorAll('.details')
+            botonesInfo.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const idAsset = e.target.id;
+                    this.showAssetInfo(assets, idAsset)
+                })
             })
-        }
+        });
+        
+    }
+    showAssetInfo(assets, idAsset) {
+            let mainContent = document.querySelector('.mainContent')
+            let asset = assets.find(asset => asset.id === idAsset);
+            let assetInfo = document.createElement('div')
+            assetInfo.innerHTML = /* HTML */ `
+            <div class="asset"">
+                    <div class=" asset-body">
+                    <fieldset>
+                        <legend style="text-align: center"> Activo </legend>
+                        <fieldset>
+                            <legend> Nombre del activo</legend>
+                            <div class="form-group">
+                                <h3>${asset.name}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Id</legend>
+                            <div class="form-group">
+                                <h3>${asset.id}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Estado</legend>
+                            <div class="form-group">
+                                <h3>${asset.EstadoId}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Descripcion</legend>
+                            <div class="form-group">
+                                <h3>${asset.Descripcion}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Marca</legend>
+                            <div class="form-group">
+                                <h3>${asset.MarcaId}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Categoria</legend>
+                            <div class="form-group">
+                                <h3>${asset.categoryId}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Tipo de item</legend>
+                            <div class="form-group">
+                                <h3>${asset.TipoActivoId}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Valor unitario</legend>
+                            <div class="form-group">
+                                <h3>${asset["Valor unitario"]}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Proveedor</legend>
+                            <div class="form-group">
+                                <h3>${asset.ProveedoreId}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend> Numero de serial</legend>
+                            <div class="form-group">
+                                <h3>${asset.Serial}</h3>
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Empresa responsable </legend>
+                            <div class="form-group">
+                                <h3>${asset.EmpresaId}</h3>
+                            </div>
+                        </fieldset>
+                        <button type="button" id="close">Cerrar</button>
+                    </div>
+                </div>
+            `
+            mainContent.appendChild(assetInfo)
+            let closeButton = document.querySelector('#close')
+            closeButton.addEventListener('click', (e) => {
+                e.preventDefault()
+                mainContent.removeChild(assetInfo)
+            })
     }
 }
 customElements.define("search-asset", Buscar)
