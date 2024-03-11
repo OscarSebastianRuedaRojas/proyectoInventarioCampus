@@ -15,11 +15,11 @@ export class Buscar extends HTMLElement {
         <div class="search-card">
             <div class="search-body">
                 <fieldset>
-                    <legend>Buscar</legend>
+                    <legend>Buscar Activo</legend>
                 </fieldset>
                 <form id="getAsset">
                     <input type="text" id="search-description" placeholder="Ingrese descripcion" required>
-                    <button type="submit" id="search-button">Buscar Activo</button>
+                    <button type="submit" id="search-button">Buscar</button>
                 </form>
             </div>
             <div class="results">
