@@ -18,7 +18,7 @@ export class CrearAsignacion extends HTMLElement {
                         <fieldset>
                             <legend style="text-align: center"> Crear Asignación </legend>
                         </fieldset>
-                                <legend>Selecciona el responsable</legend>
+                                <label>Selecciona el responsable</label>
                                 <div class="form-group">
                                     <select name="responsableId" id="responsableSelect">
                                     </select>

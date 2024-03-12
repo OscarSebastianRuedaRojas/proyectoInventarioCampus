@@ -1,0 +1,51 @@
+.formCard {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el cuerpo del formulario */
+.formCard-body {
+    padding: 20px;
+}
+
+/* Estilo para el título principal */
+.formCard-body h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los campos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilo para el botón de enviar */
+button[type="submit"] {
+    background-color: #123255;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #225c9a;
+}
+
+/* Estilo para el selector */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
