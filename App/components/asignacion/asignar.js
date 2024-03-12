@@ -101,15 +101,15 @@ export class AsignarActivo extends HTMLElement {
                 const idActivo = boton.id;
                 const ind = activos.findIndex(activo => activo.id === idActivo);
                 activos[ind].EstadoId = "Es-1";
-                // await this.putProductss("/Activos", idActivo, activos[ind]);
+                await this.putProductss("/Activos", idActivo, activos[ind]);
                 this.renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON);
             });
         });
     }
 
-    // async putProductss(endpoint, idActivo, activo) {
-    //     await putProducts(endpoint, idActivo, activo);
-    // }
+    async putProductss(endpoint, idActivo, activo) {
+        await putProducts(endpoint, idActivo, activo);
+    }
 
     renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON) {
         this.innerHTML = /* HTML */`
