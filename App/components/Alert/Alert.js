@@ -21,6 +21,11 @@ export class Alert extends HTMLElement {
             document.getElementById("alert").style.display = "block"; 
             setTimeout(function(){ document.getElementById("alert").style.display = "none"; }, 5000);
         });
+        document.getElementById("submit").addEventListener("click", function(event){
+            event.preventDefault();
+            document.getElementById("alert").style.display = "block"; 
+            setTimeout(function(){ document.getElementById("alert").style.display = "none"; }, 5000);
+        });
     }
 }
 

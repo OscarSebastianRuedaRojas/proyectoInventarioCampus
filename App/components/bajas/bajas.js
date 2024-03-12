@@ -36,7 +36,7 @@ export class EditarBajas extends HTMLElement {
                 tr.innerHTML = /* HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${element.name}</td>
-                <td><button type="button" id="${element.id}" class="bajasBoton">Mandar a bajas</button></td>
+                <td><button type="button" id="${element.id}" class="bajasBoton">Dar a bajas</button></td>
             `;
             tbody.appendChild(tr);
             }
