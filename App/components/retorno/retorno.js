@@ -1,12 +1,12 @@
-import { postProducts, getProducts, putProducts } from '../../../../Api/db/db.js';
+import { getProducts } from '../../../../Api/db/db.js';
 
 export class RetornarActivo extends HTMLElement {
     constructor() {
         super();
-        this.renderPersonasAsignaciones();
-        this.renderListaActivosRetonar();
+        this.renderAsignaciones();
     }
-    async renderPersonasAsignaciones() {
+
+    async renderAsignaciones() {
         this.innerHTML = /* HTML */ `
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -15,51 +15,13 @@ export class RetornarActivo extends HTMLElement {
                 <div class="formCard-body">
                     <form id="taskForm"></form>
                     <table class="table table-hover caption-top">
-                        <caption>Lista de personas</caption>
+                        <caption>Lista de activos</caption>
                         <thead>
                             <tr>  
                                 <th scope="col">Identificador</th>
-                                <th scope="col">Descripción</th>
-                                <th scope="col">Seleccionar</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-            </div>
-        `;
-        const tbody = this.querySelector('tbody');
-        const personas = await getProducts(`/Personas`);
-        personas.forEach(persona => {
-            const tr = document.createElement('tr');
-            tr.innerHTML = /* HTML */`
-                <td id="id">${persona.id}</td>
-                <td id="name">${persona.name}</td>
-                <td><button type="button" id="${persona.id}" class="elegirBoton">Elegir</button></td>
-            `;
-            tbody.appendChild(tr);
-        });
-        const elegir = this.querySelector('.elegirBoton')
-        elegir.addEventListener('click', (e) => {
-            this.renderListaActivosRetonar()
-        })
-    }
-    async renderListaActivosRetonar() {
-        this.innerHTML = /* HTML */ `
-            <style>
-                @import "./App/components/Editar/editarActivo/editarActivo.css"; 
-            </style>
-            <div class="formCard">
-                <div class="formCard-body">
-                    <form id="taskForm"></form>
-                    <table class="table table-hover caption-top">
-                        <caption>Lista de activos para retornar</caption>
-                        <thead>
-                            <tr>  
-                                <th scope="col">Identificador</th>
-                                <th scope="col">Persona responsable</th>
-                                <th scope="col">Fecha de entrega</th>
-                                <th scope="col">Seleccionar</th>
+                                <th scope="col">responsable</th>
+                                <th scope="col">Fecha asignado</th>
+                                <th scope="col">Seleccionar </th>
                             </tr>
                         </thead>
                         <tbody></tbody>
@@ -70,18 +32,72 @@ export class RetornarActivo extends HTMLElement {
         const tbody = this.querySelector('tbody');
         const asignaciones = await getProducts(`/asignaciones`);
         const personas = await getProducts(`/Personas`);
+
         asignaciones.forEach(asignacion => {
+            const personaInd = personas.findIndex(persona => persona.id === asignacion.responsableId);
             const tr = document.createElement('tr');
-            const ind = personas.findIndex(persona => persona.id === asignacion.responsableId);
             tr.innerHTML = /* HTML */`
-                <td id="id">${asignacion.id}</td>
-                <td id="name">${personas[ind].name}</td>
-                <td id="name">${asignacion.fecha}</td>
-                <td><button type="button" id="${asignacion.id}" class="elegirBoton">Elegir</button></td>
+                <td>${asignacion.id}</td>
+                <td>${personas[personaInd].name}</td>
+                <td>${asignacion.fecha}</td>
+                <td><button type="button" data-id="${asignacion.id}" class="elegirBtn">Retornar</button></td>
             `;
             tbody.appendChild(tr);
-    })
+        });
 
-}}
+        const elegirBtns = document.querySelectorAll('.elegirBtn');
+        elegirBtns.forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                const asignacionId = e.target.dataset.id;
+                this.renderListaActivosRetonar(asignacionId);
+            });
+        });
+    }
+
+    async renderListaActivosRetonar(asignacionId) {
+        this.innerHTML = /* HTML */ `
+            <style>
+                @import "./App/components/Editar/editarActivo/editarActivo.css"; 
+            </style>
+            <div class="formCard">
+                <div class="formCard-body">
+                    <form id="taskForm"></form>
+                    <table class="table table-hover caption-top">
+                        <caption>Lista de movimientos</caption>
+                        <thead>
+                            <tr>  
+                                <th scope="col">Identificador</th>
+                                <th scope="col">comentario</th>
+                                <th scope="col">Fecha asignado</th>
+                                <th scope="col">asignacion </th>
+                                <th scope="col">activo </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+        const tbody = this.querySelector('tbody');
+        const detallesMovimientosJSON = await getProducts("/DetallesMovimientos");
+        const asignaciones = await getProducts(`/asignaciones`);
+        const personas = await getProducts(`/Personas`);
+        const activos = await getProducts(`/Activos`);
+        detallesMovimientosJSON.forEach(movimiento => {
+            
+            if (movimiento.asignacioneId == asignacionId) {
+                const tr = document.createElement('tr');
+                tr.innerHTML = /* HTML */`
+                    <td>${movimiento.id}</td>
+                    <td>${movimiento.comentario}</td>
+                    <td>${movimiento.fecha}</td>
+                    <td>${asignacionId}</td>
+                    <td>${movimiento.activoId}</td>
+                `;
+                tbody.appendChild(tr);
+            }
+        });
+    }
+}
 
 customElements.define('retornar-activo', RetornarActivo);

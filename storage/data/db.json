@@ -29,7 +29,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "N/A",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-17"
     },
     {
@@ -110,7 +110,7 @@
       "ProveedoreId": "Prv-6",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-8"
     },
     {
@@ -126,7 +126,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -158,7 +158,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -174,7 +174,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "DEF456",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-6"
     },
     {
@@ -238,7 +238,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "PQR678",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-9"
     },
     {
@@ -254,7 +254,7 @@
       "ProveedoreId": "Prv-8",
       "Serial": "STU901",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-8",
       "estadoId": "Es-2"
     },
@@ -271,7 +271,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "VWX123",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-15"
     },
     {
@@ -287,7 +287,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "YZA234",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-14"
     }
   ],
@@ -404,6 +404,76 @@
       "ActivoId": "Ac-6",
       "fecha": "12/3/2024",
       "PersonaId": "Pr-2",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-2",
+      "ActivoId": "Ac-17",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-2",
+      "ActivoId": "Ac-17",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-4",
+      "ActivoId": "Ac-18",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-5",
+      "ActivoId": "Ac-16",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-6",
+      "ActivoId": "Ac-2",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-7",
+      "ActivoId": "Ac-15",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-2",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-8",
+      "ActivoId": "Ac-11",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-9",
+      "ActivoId": "Ac-7",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-2",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-9",
+      "ActivoId": "Ac-7",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-2",
+      "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-11",
+      "ActivoId": "Ac-10",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
       "EstadoId": "Es-1"
     }
   ],
@@ -883,6 +953,82 @@
       "fecha": "12/3/2024",
       "asignacioneId": "As-1",
       "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-10",
+      "comentario": "asigned",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-17"
+    },
+    {
+      "id": "Dm-10",
+      "comentario": "asigned",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-17"
+    },
+    {
+      "id": "Dm-12",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-18"
+    },
+    {
+      "id": "Dm-13",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-16"
+    },
+    {
+      "id": "Dm-14",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-2"
+    },
+    {
+      "id": "Dm-15",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-15"
+    },
+    {
+      "id": "Dm-16",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-11"
+    },
+    {
+      "id": "Dm-17",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-7"
+    },
+    {
+      "id": "Dm-17",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-7"
+    },
+    {
+      "id": "Dm-17",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-7"
+    },
+    {
+      "id": "Dm-20",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-10"
     }
   ],
   "Empresas": [
