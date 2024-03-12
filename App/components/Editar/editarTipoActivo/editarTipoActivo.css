@@ -11,7 +11,7 @@ dialog {
 @media (max-width: 768px) {
     dialog {
         width: 262px;
-        transform: translate(0, -86rem);
+        transform: translate(3rem, -86rem);
     }
 }
 input[type="text"] {

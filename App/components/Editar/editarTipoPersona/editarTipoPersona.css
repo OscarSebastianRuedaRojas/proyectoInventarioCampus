@@ -11,7 +11,7 @@ dialog {
 @media (max-width: 768px) {
     dialog {
         width: 262px;
-        transform: translate(0, -23rem);
+        transform: translate(3rem, -23rem);
     }
     .formCard {
         transform: scale(0.7) translateY(-10rem);

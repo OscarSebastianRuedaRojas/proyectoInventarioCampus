@@ -6,7 +6,7 @@ export class RetornarActivo extends HTMLElement {
         this.renderPersonasAsignaciones();
         this.renderListaActivosRetonar();
     }
-    renderPersonasAsignaciones() {
+    async renderPersonasAsignaciones() {
         this.innerHTML = /* HTML */ `
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -28,8 +28,23 @@ export class RetornarActivo extends HTMLElement {
                 </div>
             </div>
         `;
+        const tbody = this.querySelector('tbody');
+        const personas = await getProducts(`/Personas`);
+        personas.forEach(persona => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = /* HTML */`
+                <td id="id">${persona.id}</td>
+                <td id="name">${persona.name}</td>
+                <td><button type="button" id="${persona.id}" class="elegirBoton">Elegir</button></td>
+            `;
+            tbody.appendChild(tr);
+        });
+        const elegir = this.querySelector('.elegirBoton')
+        elegir.addEventListener('click', (e) => {
+            this.renderListaActivosRetonar()
+        })
     }
-    renderListaActivosRetonar() {
+    async renderListaActivosRetonar() {
         this.innerHTML = /* HTML */ `
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -42,7 +57,8 @@ export class RetornarActivo extends HTMLElement {
                         <thead>
                             <tr>  
                                 <th scope="col">Identificador</th>
-                                <th scope="col">Descripción</th>
+                                <th scope="col">Persona responsable</th>
+                                <th scope="col">Fecha de entrega</th>
                                 <th scope="col">Seleccionar</th>
                             </tr>
                         </thead>
@@ -51,9 +67,21 @@ export class RetornarActivo extends HTMLElement {
                 </div>
             </div>
         `;
-        
-    }
+        const tbody = this.querySelector('tbody');
+        const asignaciones = await getProducts(`/asignaciones`);
+        const personas = await getProducts(`/Personas`);
+        asignaciones.forEach(asignacion => {
+            const tr = document.createElement('tr');
+            const ind = personas.findIndex(persona => persona.id === asignacion.responsableId);
+            tr.innerHTML = /* HTML */`
+                <td id="id">${asignacion.id}</td>
+                <td id="name">${personas[ind].name}</td>
+                <td id="name">${asignacion.fecha}</td>
+                <td><button type="button" id="${asignacion.id}" class="elegirBoton">Elegir</button></td>
+            `;
+            tbody.appendChild(tr);
+    })
 
-}
+}}
 
 customElements.define('retornar-activo', RetornarActivo);

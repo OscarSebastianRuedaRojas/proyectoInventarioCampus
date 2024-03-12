@@ -91,6 +91,9 @@ export class Form extends HTMLElement {
             <custom-alert></custom-alert>
         `
     }
+    /**
+     *  @returns Formulario para agregar activo con los selectores alimentados desde la db.
+     */
     async getAndShowData() {
         function populateSelect(data, id) {
             const select = document.querySelector(id)
@@ -121,7 +124,10 @@ export class Form extends HTMLElement {
 
 
 
-    }
+    } 
+    /**
+     * Envia método post a la DB con el formulario del activo agregado.
+     */
     async postData() {
         const form = document.querySelector('#taskForm')
         form.addEventListener('submit', async (e) => {
