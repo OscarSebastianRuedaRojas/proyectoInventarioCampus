@@ -462,6 +462,11 @@
       "id": "As-1",
       "responsableId": "Pr-2",
       "fecha": "11/3/2024"
+    },
+    {
+      "id": "As-2",
+      "responsableId": "Pr-1",
+      "fecha": "12/3/2024"
     }
   ],
   "TipoActivos": [
@@ -821,6 +826,13 @@
       "fecha": "11/3/2024",
       "asignacioneId": "As-1",
       "activoId": "Ac-5"
+    },
+    {
+      "id": "Dm-3",
+      "comentario": "Se asígno sofa para oficina del responsable.",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-7"
     }
   ],
   "Empresas": [
