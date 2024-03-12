@@ -20,7 +20,7 @@ export class AsignarActivo extends HTMLElement {
                 <div class="formCard-body">
                     <form id="taskForm"></form>
                     <table class="table table-hover caption-top">
-                        <caption>Lista de Activos</caption>
+                        <caption>Lista de personas</caption>
                         <thead>
                             <tr>  
                                 <th scope="col">Identificador</th>

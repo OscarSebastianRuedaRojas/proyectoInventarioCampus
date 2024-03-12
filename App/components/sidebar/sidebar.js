@@ -230,7 +230,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<asignar-activo></asignar-activo>";
                         break;
                     case 'asR':
-                        mainContent.innerHTML= "<search-asset></search-asset>";
+                        mainContent.innerHTML= "<retornar-activo></retornar-activo>";
                         break;
                 }
                 e.stopImmediatePropagation();
