@@ -40,9 +40,6 @@ export class AsignarActivo extends HTMLElement {
             const tr = document.createElement('tr');
             const idNombre = element.responsableId;
             const ind = personas.findIndex(persona => persona.id === idNombre);
-            console.log(personas);
-            console.log(ind);
-            console.log(personas[ind]);
             tr.innerHTML = /* HTML */`
                 <td id="id">${element.id}</td>
                 <td id="name">${personas[ind].name}</td>
@@ -60,7 +57,7 @@ export class AsignarActivo extends HTMLElement {
         });
     }
 
-    renderActivos(activos, idAsignacion, detallesMovimientosJSON, HistorialActivosJSON, elements, personas ) {
+    async renderActivos(activos, idAsignacion, detallesMovimientosJSON, HistorialActivosJSON, elements, personas ) {
         this.innerHTML = /* HTML */`
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -103,13 +100,13 @@ export class AsignarActivo extends HTMLElement {
                 const ind = activos.findIndex(activo => activo.id === idActivo);
                 let idEstado = "Es-1"
                 activos[ind].EstadoId = idEstado;
-                await this.putProductss("/Activos", idActivo, activos[ind]);
+                await this.putProducts("/Activos", idActivo, activos[ind]);
                 this.renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON, HistorialActivosJSON, idEstado, elements, personas);
             });
         });
     }
 
-    async putProductss(endpoint, idActivo, activo) {
+    async putProducts(endpoint, idActivo, activo) {
         await putProducts(endpoint, idActivo, activo);
     }
 
@@ -156,22 +153,23 @@ export class AsignarActivo extends HTMLElement {
             this.generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, personas, idAsignacion)
         });
     }
-    async generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, idAsignacion){
+
+    async generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, personas, idAsignacion){
+        let idNombre = "";
         elements.forEach(element => {
             if(element.id===idAsignacion){
-                const idNombre = element.responsableId;
-                let id = `Ha-${Object.keys(HistorialActivosJSON).length + 1}`
-                let data = {
-                id: id,
-                ActivoId: idActivo,
-                fecha: fecha,
-                PersonaId: idNombre,
-                EstadoId: idEstado
-            }
-            postProducts("/HistorialActivos", data)
+                idNombre = element.responsableId;
             }
         });
-        
+        let id = `Ha-${Object.keys(HistorialActivosJSON).length + 1}`
+        let data = {
+            id: id,
+            ActivoId: idActivo,
+            fecha: fecha,
+            PersonaId: idNombre,
+            EstadoId: idEstado
+        }
+        postProducts("/HistorialActivos", data);
     }
 }
 

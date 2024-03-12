@@ -847,6 +847,20 @@
       "fecha": "12/3/2024",
       "asignacioneId": "As-1",
       "activoId": "Ac-4"
+    },
+    {
+      "id": "Dm-6",
+      "comentario": "Aire asignado",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-6",
+      "comentario": "Aire asignado",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-6"
     }
   ],
   "Empresas": [
