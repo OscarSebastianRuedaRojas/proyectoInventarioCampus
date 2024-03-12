@@ -1,4 +1,4 @@
-import { getProducts } from '../../../../Api/db/db.js';
+import { getProducts, delProducts } from '../../../../Api/db/db.js';
 
 export class RetornarActivo extends HTMLElement {
     constructor() {
@@ -71,6 +71,8 @@ export class RetornarActivo extends HTMLElement {
                                 <th scope="col">Fecha asignado</th>
                                 <th scope="col">asignacion </th>
                                 <th scope="col">activo </th>
+                                <th scope="col">Seleccionar </th>
+                                
                             </tr>
                         </thead>
                         <tbody></tbody>
@@ -84,7 +86,6 @@ export class RetornarActivo extends HTMLElement {
         const personas = await getProducts(`/Personas`);
         const activos = await getProducts(`/Activos`);
         detallesMovimientosJSON.forEach(movimiento => {
-            
             if (movimiento.asignacioneId == asignacionId) {
                 const tr = document.createElement('tr');
                 tr.innerHTML = /* HTML */`
@@ -93,10 +94,20 @@ export class RetornarActivo extends HTMLElement {
                     <td>${movimiento.fecha}</td>
                     <td>${asignacionId}</td>
                     <td>${movimiento.activoId}</td>
+                    <td><button type="button" id="${movimiento.id}"class="retornar-btn">Retornar</button></td>
                 `;
                 tbody.appendChild(tr);
             }
         });
+        const retornarBtn = document.querySelectorAll('.retornar-btn')
+        retornarBtn.forEach(btn => {
+            btn.addEventListener('click', async (e) => {
+                let movimientoId = e.target.id
+                const detallesMovimientosJSON = await delProducts("/DetallesMovimientos", movimientoId);
+                console.log("Se borró");
+                
+            })
+        })
     }
 }
 
