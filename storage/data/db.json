@@ -13,7 +13,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "N/A",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-1"
     },
     {
@@ -45,7 +45,7 @@
       "ProveedoreId": "Prv-1",
       "Serial": "ABC123",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-4"
     },
     {
@@ -807,7 +807,22 @@
       "name": "Andres Lizarazo Mendoza"
     }
   ],
-  "DetallesMovimientos": [],
+  "DetallesMovimientos": [
+    {
+      "id": "Dm-1",
+      "comentario": "Aire asignado",
+      "fecha": "11/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-5"
+    },
+    {
+      "id": "Dm-2",
+      "comentario": "Aire asignado",
+      "fecha": "11/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-5"
+    }
+  ],
   "Empresas": [
     {
       "id": "Emp-1",
