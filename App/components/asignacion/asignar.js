@@ -55,12 +55,12 @@ export class AsignarActivo extends HTMLElement {
         botones.forEach(boton => {
             boton.addEventListener("click", () => {
                 const idAsignacion = boton.id;
-                this.renderActivos(activos, idAsignacion, detallesMovimientosJSON, idNombre, HistorialActivosJSON);
+                this.renderActivos(activos, idAsignacion, detallesMovimientosJSON, HistorialActivosJSON, elements, personas);
             });
         });
     }
 
-    renderActivos(activos, idAsignacion, detallesMovimientosJSON, idNombre, HistorialActivosJSON ) {
+    renderActivos(activos, idAsignacion, detallesMovimientosJSON, HistorialActivosJSON, elements, personas ) {
         this.innerHTML = /* HTML */`
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -104,7 +104,7 @@ export class AsignarActivo extends HTMLElement {
                 let idEstado = "Es-1"
                 activos[ind].EstadoId = idEstado;
                 await this.putProductss("/Activos", idActivo, activos[ind]);
-                this.renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON, idNombre, HistorialActivosJSON, idEstado);
+                this.renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON, HistorialActivosJSON, idEstado, elements, personas);
             });
         });
     }
@@ -113,7 +113,7 @@ export class AsignarActivo extends HTMLElement {
         await putProducts(endpoint, idActivo, activo);
     }
 
-    renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON, idNombre, HistorialActivosJSON, idEstado) {
+    renderFormulario(idAsignacion, idActivo, detallesMovimientosJSON, HistorialActivosJSON, idEstado, elements, personas) {
         this.innerHTML = /* HTML */`
             <style>
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
@@ -153,19 +153,25 @@ export class AsignarActivo extends HTMLElement {
             data.activoId = idActivo;
             data.id = `Dm-${Object.keys(detallesMovimientosJSON).length + 1}`;
             await postProducts("/DetallesMovimientos", data);
-            this.generarHistorial(idActivo, idNombre, idEstado, fecha, HistorialActivosJSON)
+            this.generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, personas, idAsignacion)
         });
     }
-    async generarHistorial(idActivo, idResponsable, idEstado, fecha, HistorialActivosJSON){
-        let id = `Ha-${Object.keys(HistorialActivosJSON).length + 1}`
-        let data = {
-            id: id,
-            ActivoId: idActivo,
-            fecha: fecha,
-            PersonaId: idResponsable,
-            EstadoId: idEstado
-        }
-        await postProducts("/HistorialActivos", data)
+    async generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, idAsignacion){
+        elements.forEach(element => {
+            if(element.id===idAsignacion){
+                const idNombre = element.responsableId;
+                let id = `Ha-${Object.keys(HistorialActivosJSON).length + 1}`
+                let data = {
+                id: id,
+                ActivoId: idActivo,
+                fecha: fecha,
+                PersonaId: idNombre,
+                EstadoId: idEstado
+            }
+            postProducts("/HistorialActivos", data)
+            }
+        });
+        
     }
 }
 
