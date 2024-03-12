@@ -1,12 +1,19 @@
 dialog {
-    width: 300px;
+    width: 388px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 1rem;
+    position: relative;
+    transform: translate(0, -86rem);
 }
-
+@media (max-width: 768px) {
+    dialog {
+        width: 262px;
+        transform: translate(0, -86rem);
+    }
+}
 input[type="text"] {
     width: 100%;
     padding: 10px;

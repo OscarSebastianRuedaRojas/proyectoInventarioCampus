@@ -19,7 +19,7 @@ export class FormTipoPersona extends HTMLElement {
                             <fieldset>
                             <div class="form-group">
                                 <input type="text" id="TipoPersona" name="name"
-                                    placeholder="Añadir Tipo de persona" required>
+                                    placeholder="Añadir tipo de persona" required>
                             </div>
                             <button type="submit">Submit</button>
                     </form>

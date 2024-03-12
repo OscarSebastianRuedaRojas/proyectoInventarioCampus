@@ -9,7 +9,7 @@ export class EditarActivos extends HTMLElement {
     async render() {
         const elements = Array.from(await getProducts(`/Activos`));
 
-        this.innerHTML = `
+        this.innerHTML = /*html */`
             <style rel="stylesheet">
                 @import "./App/components/Editar/editarActivo/editarActivo.css"; 
             </style>

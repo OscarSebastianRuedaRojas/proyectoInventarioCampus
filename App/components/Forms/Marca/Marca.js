@@ -19,7 +19,7 @@ export class FormMarca extends HTMLElement {
                             <fieldset>
                             <div class="form-group">
                                 <input type="text" id="marca" name="name"
-                                    placeholder="Añadir marca" required>
+                                    placeholder="Añadir nombre de la marca" required>
                             </div>
                             <button type="submit">Submit</button>
                     </form>

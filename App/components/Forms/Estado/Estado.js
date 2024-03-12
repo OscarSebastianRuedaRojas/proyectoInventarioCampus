@@ -20,7 +20,7 @@ export class FormEstado extends HTMLElement {
                             <fieldset>
                             <div class="form-group">
                                 <input type="text" id="estado" name="name"
-                                    placeholder="Añadir Estado" required>
+                                    placeholder="Añadir nombre del nuevo estado" required>
                             </div>
                             <button type="submit">Submit</button>
                     </form>

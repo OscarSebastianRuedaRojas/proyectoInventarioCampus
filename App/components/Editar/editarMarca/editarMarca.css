@@ -1,10 +1,19 @@
 dialog {
-    width: 300px;
+    width: clamp(15rem, 20vw, 40rem);
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 1rem;
+    position: relative;
+    transform: translate(0 , -50rem);
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 input[type="text"] {
@@ -22,6 +31,7 @@ button[type="submit"],
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 1rem 0 ;
 }
 
 #cancel {

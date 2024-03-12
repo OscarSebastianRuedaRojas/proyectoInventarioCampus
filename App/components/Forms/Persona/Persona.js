@@ -26,7 +26,7 @@ export class Persona extends HTMLElement {
                         <Legend> Numero de identificacion/Nit </Legend>
                         <div class="form-group">
                             <input type="number" id="id" name="id"
-                                placeholder="Ingrese el número" required>
+                                placeholder="Ingrese el número de identificación" required>
                         </div>
                     </fieldset>
                     <fieldset>

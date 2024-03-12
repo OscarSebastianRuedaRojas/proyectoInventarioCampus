@@ -1,11 +1,18 @@
 dialog {
-    width: clamp(17rem, 30vw, 30rem);
-    padding: 20px;
+    width: clamp(17rem, 60vw, 30rem);
+    padding: 0;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 1rem;
     position: relative;
+    transform: translate(0px, -63rem);
+}
+
+@media (max-width: 768px) {
+    dialog{
+        transform: translate(0px, -78rem);
+    }
 }
 
 input[type="text"] {

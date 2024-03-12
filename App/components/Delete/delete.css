@@ -8,6 +8,11 @@
     border: 5px;
 
 }
+@media (max-width: 768px) {
+    .formCard {
+        transform: scale(0.7) translate(-3rem, -16rem);
+    }
+}
 .body{
     width: 100%;
     height: 100%;
