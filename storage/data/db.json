@@ -93,7 +93,7 @@
       "ProveedoreId": "Prv-7",
       "Serial": "GHI789",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-9",
       "estadoId": "Es-2"
     },
@@ -398,7 +398,15 @@
     }
   ],
   "TipoDeMovimientos": [],
-  "HistorialActivos": [],
+  "HistorialActivos": [
+    {
+      "id": "Ha-1",
+      "ActivoId": "Ac-6",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-2",
+      "EstadoId": "Es-1"
+    }
+  ],
   "Proveedores": [
     {
       "id": "Prv-1",
@@ -857,6 +865,20 @@
     },
     {
       "id": "Dm-6",
+      "comentario": "Aire asignado",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-8",
+      "comentario": "Aire asignado",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-8",
       "comentario": "Aire asignado",
       "fecha": "12/3/2024",
       "asignacioneId": "As-1",
