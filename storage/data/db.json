@@ -13,7 +13,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "N/A",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-17"
     },
     {
@@ -94,7 +94,7 @@
       "ProveedoreId": "Prv-6",
       "Serial": "JKL012",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-8"
     },
     {
@@ -110,7 +110,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "MNO345",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -142,7 +142,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-12"
     },
     {
@@ -158,7 +158,7 @@
       "ProveedoreId": "Prv-4",
       "Serial": "DEF456",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-6"
     },
     {
@@ -222,7 +222,7 @@
       "ProveedoreId": "Prv-2",
       "Serial": "PQR678",
       "EmpresaId": "Emp-4",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-9"
     },
     {
@@ -238,7 +238,7 @@
       "ProveedoreId": "Prv-8",
       "Serial": "STU901",
       "EmpresaId": "Emp-1",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-8",
       "estadoId": "Es-2"
     },
@@ -255,7 +255,7 @@
       "ProveedoreId": "Prv-5",
       "Serial": "VWX123",
       "EmpresaId": "Emp-2",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-15"
     },
     {
@@ -388,13 +388,6 @@
       "ActivoId": "Ac-6",
       "fecha": "12/3/2024",
       "PersonaId": "Pr-2",
-      "EstadoId": "Es-1"
-    },
-    {
-      "id": "Ha-2",
-      "ActivoId": "Ac-18",
-      "fecha": "12/3/2024",
-      "PersonaId": "Pr-1",
       "EstadoId": "Es-1"
     }
   ],
@@ -889,13 +882,6 @@
       "fecha": "12/3/2024",
       "asignacioneId": "As-1",
       "activoId": "Ac-6"
-    },
-    {
-      "id": "Dm-10",
-      "comentario": "Para que se alimente bien y congele sus shakes",
-      "fecha": "12/3/2024",
-      "asignacioneId": "As-2",
-      "activoId": "Ac-18"
     }
   ],
   "Empresas": [
