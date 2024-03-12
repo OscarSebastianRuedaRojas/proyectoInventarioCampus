@@ -457,7 +457,13 @@
     }
   ],
   "PersonasTelefonos": [],
-  "asignaciones": [],
+  "asignaciones": [
+    {
+      "id": "As-1",
+      "responsableId": "Pr-2",
+      "fecha": "11/3/2024"
+    }
+  ],
   "TipoActivos": [
     {
       "id": "TpAc-2",

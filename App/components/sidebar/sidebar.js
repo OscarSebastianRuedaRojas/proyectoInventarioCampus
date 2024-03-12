@@ -120,6 +120,21 @@ export class SideBar extends HTMLElement{
                     <span>Buscar</span>
                 </a>
             </li>
+            <li class="sidebar-item">
+                <a  class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#asignar" aria-expanded="false" aria-controls="asignar" >
+                    <i class='bx bx-edit'></i>
+                    <span>Asignar</span>
+                </a>
+                <ul id="asignar" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-verocultar='["asP"]'>Crear Portafolio</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-verocultar='["asA"]'>Asignar Activo</a>
+                    </li>
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link" data-verocultar='["asR"]'>Retornar Activo</a>
+                    </li>
         </ul>
         <div class="sidebar-footer">
             <a href="#" class="sidebar-link">
@@ -206,6 +221,15 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<delete-element></delete-element>";
                         break;
                     case 'Buscar':
+                        mainContent.innerHTML= "<search-asset></search-asset>";
+                        break;
+                    case 'asP':
+                        mainContent.innerHTML= "<crear-asignacion></crear-asignacion>";
+                        break;
+                    case 'asA':
+                        mainContent.innerHTML= "<search-asset></search-asset>";
+                        break;
+                    case 'asR':
                         mainContent.innerHTML= "<search-asset></search-asset>";
                         break;
                 }
