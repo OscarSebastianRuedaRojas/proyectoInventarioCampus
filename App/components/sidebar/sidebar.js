@@ -227,7 +227,7 @@ export class SideBar extends HTMLElement{
                         mainContent.innerHTML= "<crear-asignacion></crear-asignacion>";
                         break;
                     case 'asA':
-                        mainContent.innerHTML= "<search-asset></search-asset>";
+                        mainContent.innerHTML= "<asignar-activo></asignar-activo>";
                         break;
                     case 'asR':
                         mainContent.innerHTML= "<search-asset></search-asset>";
