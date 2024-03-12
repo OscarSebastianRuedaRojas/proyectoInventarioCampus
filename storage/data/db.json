@@ -61,7 +61,7 @@
       "ProveedoreId": "Prv-3",
       "Serial": "XYZ789",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-5"
     },
     {
@@ -462,7 +462,6 @@
       "id": "As-1",
       "responsableId": "Pr-2",
       "fecha": "11/3/2024"
-
     },
     {
       "id": "As-2",
@@ -834,6 +833,20 @@
       "fecha": "12/3/2024",
       "asignacioneId": "As-2",
       "activoId": "Ac-7"
+    },
+    {
+      "id": "Dm-4",
+      "comentario": "Aire asignado",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-5",
+      "comentario": "Televisor",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-1",
+      "activoId": "Ac-4"
     }
   ],
   "Empresas": [
