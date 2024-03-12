@@ -119,20 +119,21 @@ export class AsignarActivo extends HTMLElement {
                 <div class="formCard-body">
                     <form id="taskForm">
                         <fieldset>
-                            <legend style="text-align: center">Crear Asignación</legend>
+                            <legend style="text-align: center">Comentario</legend>
                         </fieldset>
                         <fieldset>
-                            <legend>Selecciona el responsable</legend>
+                            <legend>Deja un comentario</legend>
                             <div class="form-group">
                                 <input type="text" id="comentario" name="comentario" placeholder="Comentario" required>
                             </div>
                         </fieldset>
-                        <button type="submit" id="submit">Enviar</button>
+                        <button type="submit" id="submit">Submit</button>
                     </form>
                 </div>
             </div>
+            <custom-alert></custom-alert>
         `;
-        
+        const customAlert = this.querySelector("custom-alert");
         const form = this.querySelector('#taskForm');
         const submit = this.querySelector("#submit");
 
@@ -152,6 +153,8 @@ export class AsignarActivo extends HTMLElement {
             await postProducts("/DetallesMovimientos", data);
             this.generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, personas, idAsignacion)
         });
+        
+        customAlert.showAlert();
     }
 
     async generarHistorial(idActivo, idEstado, fecha, HistorialActivosJSON, elements, personas, idAsignacion){
@@ -174,4 +177,5 @@ export class AsignarActivo extends HTMLElement {
 }
 
 customElements.define('asignar-activo', AsignarActivo);
+
 

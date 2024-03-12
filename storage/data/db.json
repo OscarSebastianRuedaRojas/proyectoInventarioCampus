@@ -1,22 +1,6 @@
 {
   "Activos": [
     {
-      "id": "Ac-1",
-      "name": "Aire Doméstico",
-      "Codigo Transacción": "",
-      "Formulario": 1,
-      "Descripcion": "Aire acondicionado para uso doméstico",
-      "MarcaId": "Mc-17",
-      "categoryId": "Ctg-1",
-      "TipoActivoId": "TpAc-21",
-      "Valor unitario": "2200000",
-      "ProveedoreId": "Prv-5",
-      "Serial": "N/A",
-      "EmpresaId": "Emp-1",
-      "EstadoId": "Es-1",
-      "UbicacioneId": "ubc-1"
-    },
-    {
       "id": "Ac-2",
       "name": "Impresora Oficina",
       "Codigo Transacción": "",
@@ -287,7 +271,7 @@
       "ProveedoreId": "Prv-9",
       "Serial": "YZA234",
       "EmpresaId": "Emp-3",
-      "EstadoId": "Es-0",
+      "EstadoId": "Es-1",
       "UbicacioneId": "ubc-14"
     }
   ],
@@ -405,6 +389,13 @@
       "fecha": "12/3/2024",
       "PersonaId": "Pr-2",
       "EstadoId": "Es-1"
+    },
+    {
+      "id": "Ha-2",
+      "ActivoId": "Ac-18",
+      "fecha": "12/3/2024",
+      "PersonaId": "Pr-1",
+      "EstadoId": "Es-1"
     }
   ],
   "Proveedores": [
@@ -474,6 +465,21 @@
     {
       "id": "As-2",
       "responsableId": "Pr-1",
+      "fecha": "12/3/2024"
+    },
+    {
+      "id": "As-3",
+      "responsableId": "Pr-1",
+      "fecha": "12/3/2024"
+    },
+    {
+      "id": "As-4",
+      "responsableId": "Pr-2",
+      "fecha": "12/3/2024"
+    },
+    {
+      "id": "As-5",
+      "responsableId": "Pr-2",
       "fecha": "12/3/2024"
     }
   ],
@@ -883,6 +889,13 @@
       "fecha": "12/3/2024",
       "asignacioneId": "As-1",
       "activoId": "Ac-6"
+    },
+    {
+      "id": "Dm-10",
+      "comentario": "Para que se alimente bien y congele sus shakes",
+      "fecha": "12/3/2024",
+      "asignacioneId": "As-2",
+      "activoId": "Ac-18"
     }
   ],
   "Empresas": [
