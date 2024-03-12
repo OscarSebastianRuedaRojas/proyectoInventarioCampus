@@ -59,7 +59,7 @@ export class EditarMarca extends HTMLElement {
                             <fieldset>
                                 <legend style="text-align: center"> Editar Marca ${idEditar} </legend>
                                 <div class="form-group">
-                                    <input type="text" id="estado" name="name" placeholder="Nuevo Estado" >
+                                    <input type="text" id="estado" name="name" placeholder="Nuevo nombre de marca" >
                                 </div>
                                 <button type="submit">Guardar</button>
                                 <button id="cancel">Cancelar</button>

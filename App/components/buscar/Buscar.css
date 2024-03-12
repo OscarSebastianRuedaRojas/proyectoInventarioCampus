@@ -6,12 +6,17 @@
     border-radius: 10px;
     padding: 2rem;
     gap: 1.5rem;
-    transform: scale(1);
+    transform: scale(0.8);
     max-width: clamp(19rem, 60vw, 40rem);
     margin: 0 0 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
+@media (max-width: 768) {
+    .search-card {
+        transform: translate(-11rem, -34rem) scale(.8);
+    }
+    
+}
 .search-result {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -108,10 +113,6 @@
     align-self: center;
 }
 
-
-/* ASSET VIEW STYLE*/
-
-/* Estilos para el contenedor del activo */
 .asset {
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -121,29 +122,33 @@
     margin-left: 20px;
     height: 40rem;
     overflow-y: scroll;
+    transform: scale(.9);
+}
+@media (max-width: 768px) {
+    .asset{
+        transform: scale(.9) translate(-9px, -388px);
+    }
 }
 
-/* Estilos para el cuerpo del activo */
 .asset-body {
     max-width: 600px;
     margin: 0 auto;
 }
 
-/* Estilos para las leyendas */
 .asset legend {
     font-weight: bold;
     margin-bottom: 10px;
     color: #333;
 }
 
-/* Estilos para los títulos */
+
 .asset h3 {
     margin: 10px 0;
     font-size: 18px;
     color: #007bff;
 }
 
-/* Estilos para los botones */
+
 .asset button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -158,7 +163,7 @@
     background-color: #0056b3;
 }
 
-/* Estilos para los botones de cierre */
+
 .asset button.close {
     margin-top: 20px;
     background-color: #dc3545;

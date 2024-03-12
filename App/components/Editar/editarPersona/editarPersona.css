@@ -1,12 +1,22 @@
 dialog {
-    width: 300px;
+    width: 451px;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 1rem;
+    transform: translate(0, -12rem);
+    position: relative;
 }
-
+@media (max-width: 768px) {
+    dialog {
+        width: 268px ;
+        transform: translate(0rem, -22rem);
+    }
+    .formCard {
+        transform: scale(0.7) translateY(-13rem)
+    }
+}
 input[type="text"] {
     width: 100%;
     padding: 10px;
