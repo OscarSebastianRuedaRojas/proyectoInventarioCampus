@@ -1,4 +1,4 @@
-import { postProducts,getProducts } from '../../../../Api/db/db.js';
+import { postProducts,getProducts } from '../../../Api/db/db.js';
 
 export class CrearAsignacion extends HTMLElement {
     constructor() {
