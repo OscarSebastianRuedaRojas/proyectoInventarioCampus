@@ -1,5 +1,5 @@
-import { getProducts } from "../../../../Api/db/db.js";
-import { putProducts } from "../../../../Api/db/db.js";
+import { getProducts } from "../../../Api/db/db.js";
+import { putProducts } from "../../../Api/db/db.js";
 export class Buscar extends HTMLElement {
     constructor() {
         super()

@@ -1,4 +1,4 @@
-import { getProducts, delProducts } from '../../../../Api/db/db.js';
+import { getProducts, delProducts } from '../../../Api/db/db.js';
 
 export class RetornarActivo extends HTMLElement {
     constructor() {

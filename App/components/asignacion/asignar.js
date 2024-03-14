@@ -1,4 +1,4 @@
-import { postProducts, getProducts, putProducts } from '../../../../Api/db/db.js';
+import { postProducts, getProducts, putProducts } from '../../../Api/db/db.js';
 
 export class AsignarActivo extends HTMLElement {
     constructor() {
