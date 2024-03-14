@@ -1,4 +1,4 @@
-import { getProducts, putProducts } from "../../../../Api/db/db.js";
+import { getProducts, putProducts } from "../../../Api/db/db.js";
 export class EditarUbicacion extends HTMLElement {
     constructor() {
         super();
